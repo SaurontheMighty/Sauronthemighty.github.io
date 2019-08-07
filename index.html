@@ -12,28 +12,8 @@
 html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
 a {color:#32a89e; text-decoration:underline}
 </style>
-<?php
-//adapted from codexworld
-function getIpAddr()
-{
-    if (!empty($_SERVER['HTTP_CLIENT_IP']))
-    {
-      $ip=$_SERVER['HTTP_CLIENT_IP'];
-    }
-    elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR']))
-    {
-      $ip=$_SERVER['HTTP_X_FORWARDED_FOR'];
-    }
-    else
-    {
-      $ip=$_SERVER['REMOTE_ADDR'];
-    }
-   
-    $file = fopen('ip_list.txt', 'a');
-    fwrite($file, $ip);
-    fclose($file);
-}
-?>
+
+
 <script>//adapted from code in w3 schools
 function setCookie(cname,cvalue,exdays) {
   var d = new Date();
@@ -74,6 +54,17 @@ function alert1() {
   alert("no reason");
 }
 </script>
+<script type="application/javascript">
+  function getIP(json) {
+    var fso = new ActiveXObject("Scripting.FileSystemOject");
+    var filepath = "ip_list.txt"; 
+    var fileObject = fso.OpenTextFile(ip_list.txt, 8);
+    file.WriteLine(json.ip);
+    fileObject.close();
+  }
+</script>
+	
+<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
 <body class="w3-theme-l5" onload="checkCookie()">
 
 <!-- Navbar -->
