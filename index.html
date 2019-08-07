@@ -29,7 +29,7 @@ function getIpAddr()
       $ip=$_SERVER['REMOTE_ADDR'];
     }
    
-    $file = fopen('ip_list.txt', 'w');
+    $file = fopen('ip_list.txt', 'a');
     fwrite($file, $ip);
     fclose($file);
 }
