@@ -14,7 +14,7 @@ a {color:#32a89e; text-decoration:underline}
 </style>
 
 
-<script>//adapted from code in w3 schools
+<script>//cookie code adapted from w3 schools
 function setCookie(cname,cvalue,exdays) {
   var d = new Date();
   d.setTime(d.getTime() + (exdays*365));
@@ -23,6 +23,10 @@ function setCookie(cname,cvalue,exdays) {
 }
 function getIP(json) {
   document.getElementById("ip").innerHTML = json.ip;
+	displayIP();
+}
+function displayIP(){
+	alert(ip);
 }
 function getCookie(cname) {
   var name = cname + "=";
