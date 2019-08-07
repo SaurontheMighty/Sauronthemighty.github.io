@@ -113,6 +113,7 @@ function checkCookie() {
         </span>
         <strong><p id="name"></p></strong>
         <p>Your IP address has been recorded.</p><a onclick="displayIP()">Find out ip</a>
+	<p id="ip"></p>
       </div>
     
     <!-- End Left Column -->
@@ -208,7 +209,7 @@ function checkCookie() {
 	
 <script type="application/javascript">
   function displayIP(json) {
-    alert(json.ip);
+    document.getElementById("ip").innerHTML = json.ip;
   }
 </script>
 <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
