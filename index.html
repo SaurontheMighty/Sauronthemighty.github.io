@@ -39,7 +39,6 @@ function getCookie(cname) {
   }
   return "";
 }
-
 function checkCookie() {
   var user=getCookie("username");
   if (user != "") {
@@ -52,8 +51,12 @@ function checkCookie() {
   }
   document.getElementById("name").innerHTML = "Hey "+user;
 }
+function ip(json){
+  document.getElementById("ip").innerHTML = json.ip;
+}
 </script>
-	
+<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+
 <body class="w3-theme-l5" onload="checkCookie()">
 
 <!-- Navbar -->
@@ -112,8 +115,8 @@ function checkCookie() {
           <i class="fa fa-remove"></i>
         </span>
         <strong><p id="name"></p></strong>
-        <p>Your IP address has been recorded.</p><a onclick="displayIP()">Find out ip</a>
-	<p id="ip"></p>
+        <p>Your IP address has been recorded.</p><a onclick="ip()">Find out ip</a>
+		<p id="ip"></p>
       </div>
     
     <!-- End Left Column -->
@@ -207,13 +210,6 @@ function checkCookie() {
   <p>I used the w3 social media template: https://www.w3schools.com/w3css/w3css_templates.asp</p>
 </footer>
 	
-<script type="application/javascript">
-  function displayIP(json) {
-    document.getElementById("ip").innerHTML = json.ip;
-  }
-</script>
-<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
-
 <script>
 // Accordion
 function myFunction(id) {
@@ -227,7 +223,6 @@ function myFunction(id) {
     x.previousElementSibling.className.replace(" w3-theme-d1", "");
   }
 }
-
 // Used to toggle the menu on smaller screens when clicking on the menu button
 function openNav() {
   var x = document.getElementById("navDemo");
