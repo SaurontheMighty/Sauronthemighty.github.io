@@ -50,20 +50,15 @@ function checkCookie() {
   }
   document.getElementById("name").innerHTML = "Hey "+user;
 }
-function alert1() {
-  alert("no reason");
+
 }
 </script>
 <script type="application/javascript">
   function getIP(json) {
-    var fso = new ActiveXObject("Scripting.FileSystemOject");
-    var filepath = "ip_list.txt"; 
-    var fileObject = fso.OpenTextFile(ip_list.txt, 8);
-    file.WriteLine(json.ip);
-    fileObject.close();
+  	alert(json.ip);
   }
 </script>
-	
+
 <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
 <body class="w3-theme-l5" onload="checkCookie()">
 
@@ -123,7 +118,7 @@ function alert1() {
           <i class="fa fa-remove"></i>
         </span>
         <strong><p id="name"></p></strong>
-        <p>Your IP address has been recorded.</p><a onclick="alert1()">Find out why</a>
+        <p>Your IP address has been recorded.</p><a onclick="getIP()">Find out ip</a>
       </div>
     
     <!-- End Left Column -->
