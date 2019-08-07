@@ -21,7 +21,9 @@ function setCookie(cname,cvalue,exdays) {
   var expires = "expires=" + d.toGMTString();
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
-
+function getIP(json) {
+  	alert("json.ip");
+}
 function getCookie(cname) {
   var name = cname + "=";
   var decodedCookie = decodeURIComponent(document.cookie);
@@ -50,11 +52,9 @@ function checkCookie() {
   }
   document.getElementById("name").innerHTML = "Hey "+user;
 }
-function getIP(json) {
-  	alert("json.ip");
-}
 </script>
 <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+	
 <body class="w3-theme-l5" onload="checkCookie()">
 
 <!-- Navbar -->
