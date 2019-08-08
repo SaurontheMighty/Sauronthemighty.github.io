@@ -3,11 +3,14 @@
 <head>
 <script type="application/javascript">
   function getIP(json) {
-    alert(json.ip);
+    window.ip = json.ip;
   }
 </script>
+<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+</head>
 
-<body onload="getIP()">
+<body>
+<button onclick="getIP(ip)">CLICK ME</button>
 </body>
 
 </html>
