@@ -49,10 +49,8 @@ function checkCookie() {
   }
   document.getElementById("name").innerHTML = "Hey "+user;
 }
-</script>
-<script type="application/javascript">
-function displayIP(json){
-	alert(json.ip);
+function getIP(json) {
+  	alert(json.ip);
 }
 </script>
 <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
