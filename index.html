@@ -49,9 +49,11 @@ function checkCookie() {
   }
   document.getElementById("name").innerHTML = "Hey "+user;
 }
-
+function getIP(json) {
+    window.ip = json.ip;
+}
 </script>
-
+<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
 <body class="w3-theme-l5" onload="checkCookie()">
 
 <!-- Navbar -->
@@ -110,6 +112,7 @@ function checkCookie() {
           <i class="fa fa-remove"></i>
         </span>
         <strong><p id="name"></p></strong>
+	<a onclick="alert(ip)">Want to know your IP address?</a>
       </div>
     
     <!-- End Left Column -->
