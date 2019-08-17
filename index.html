@@ -52,7 +52,9 @@ function checkCookie() {
 function getIP(json) {
     window.ip = json.ip;
 }
-
+function delCookie() {
+    window.document.cookie = "username=; expires=Wed, 24 Apr 2002 00:00:00 UTC; path=/;";
+}
 </script>
 <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
 <body class="w3-theme-l5" onload="checkCookie()">
@@ -113,7 +115,9 @@ function getIP(json) {
           <i class="fa fa-remove"></i>
         </span>
         <strong><p id="name"></p></strong>
-	<a onclick="alert(ip)">Want to know your IP address?</a>
+	<p>We use cookies to store your name! To delete the cookie just press <a onclick="delCookie(document.cookie)">this.</a></p>
+	<p></p>
+	<a onclick="alert(ip)">P.S. Want to know your IP address?</a>
       </div>
     
     <!-- End Left Column -->
