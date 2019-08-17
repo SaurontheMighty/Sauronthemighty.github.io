@@ -17,7 +17,7 @@ a {color:#32a89e; text-decoration:underline}
 <script>//cookie code adapted from w3 schools
 function setCookie(cname,cvalue,exdays) {
   var d = new Date();
-  d.setTime(d.getTime() + (exdays*365));
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
   var expires = "expires=" + d.toGMTString();
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
@@ -51,6 +51,9 @@ function checkCookie() {
 }
 function getIP(json) {
     window.ip = json.ip;
+}
+function delCookie {
+    document.cookie = "username=; expires=Wed, 24 Apr 2002 00:00:00 UTC; path=/;";
 }
 </script>
 <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
@@ -112,7 +115,8 @@ function getIP(json) {
           <i class="fa fa-remove"></i>
         </span>
         <strong><p id="name"></p></strong>
-	<a onclick="alert(ip)">Want to know your IP address?</a>
+	<p>We use cookies to store your name! To delete the cookie just press <a onclick="delCookie()">this.</a></p>
+	<a onclick="alert(ip)">P.S. Want to know your IP address?</a>
       </div>
     
     <!-- End Left Column -->
