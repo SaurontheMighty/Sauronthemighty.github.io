@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<title>SaurontheMighty</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
+a {color:#32a89e; text-decoration:underline}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+</style>
+
+
+<script>//cookie code adapted from w3 schools
+function setCookie(cname,cvalue,exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  var expires = "expires=" + d.toGMTString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+function checkCookie() {
+  var user=getCookie("username");
+  if (user != "") {
+    alert("Welcome back " + user+"!");
+  } else {
+     user = prompt("Please enter your name:","");
+     if (user != "" && user != null) {
+       setCookie("username", user, 30);
+     }
+  }
+  document.getElementById("name").innerHTML = "Hey "+user;
+}
+function getIP(json) {
+    window.ip = json.ip;
+}
+function delCookie() {
+    window.document.cookie = "username=; expires=Wed, 24 Apr 2002 00:00:00 UTC; path=/;";
+}
+</script>
+<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+<body class="w3-theme-l5" onload="checkCookie()">
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#up" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">s a u r o n t h e m i g h t y . g i t h u b . i o</a>
+
+  </a>
+ </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+
+</div>
+
+<!-- Page Container -->
+<div class="w3-container w3-content" style="max-width:1400px;margin-top:80px" id="up">    
+  <!-- The Grid -->
+  <div class="w3-row">
+    <!-- Left Column -->
+    <div class="w3-col m3">
+      <!-- Profile -->
+      <div class="w3-card w3-round w3-white">
+        <div class="w3-container">
+         <h4 class="w3-center">SaurontheMighty</h4>
+         <p class="w3-center"><img src="avatar.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+         <hr>
+         <p><i class="fa fa-book fa-fw w3-margin-right w3-text-theme"></i>Lord Of The Rings, Harry Potter, Hitchhiker's Guide to the Galaxy</p>
+         <p><i class="fas fa-laptop-code fa-fw w3-margin-right w3-text-theme"></i>Python, Java</p>
+         <p><i class="fas fa-chess fa-fw w3-margin-right w3-text-theme"></i>I like playing chess on lichess.org!</p>
+
+        </div>
+      </div>
+      <br>
+      
+      <!-- Interests --> 
+      <div class="w3-card w3-round w3-white w3-hide-small">
+        <div class="w3-container">
+          <p>
+            <span class="w3-tag w3-small w3-theme-d5">Python</span>
+            <span class="w3-tag w3-small w3-theme-d4">Java</span>
+            <span class="w3-tag w3-small w3-theme-d3">HTML</span>
+            <span class="w3-tag w3-small w3-theme-d2">Raspberryi Pi</span>
+            <span class="w3-tag w3-small w3-theme-d1">JavaScript</span>
+            
+        </div>
+      </div>
+      <br>
+      
+      <!-- Alert Box -->
+      <div class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small">
+        <span onclick="this.parentElement.style.display='none'" class="w3-button w3-theme-l3 w3-display-topright">
+          <i class="fa fa-remove"></i>
+        </span>
+        <strong><p id="name"></p></strong>
+    <div class="tooltip">
+		<p>We use cookies to store your name! To delete the cookie just press <a onclick="delCookie(document.cookie)">this.</a></p>
+    <span class="tooltiptext">See Right-hand Column</span>
+    </div>
+	<p></p>
+	<a onclick="alert(ip)">P.S. Want to know your IP address?</a>
+      </div>
+    
+    <!-- End Left Column -->
+    </div>
+    
+    <!-- Middle Column -->
+    <div class="w3-col m7">
+    
+      <div class="w3-row-padding">
+        <div class="w3-col m12">
+          <div class="w3-card w3-round w3-white">
+            <div class="w3-container w3-padding">
+              <p>A mini Java "game". This was initially made as something to run as an applet on this website, only after making it did I realise that the applet tag is deprecated.</p>
+              <button type="button" class="w3-button w3-theme" onclick="window.location.href='https://github.com/SaurontheMighty/Sauronthemighty.github.io/blob/master/GAME.jar';">Download</button> 
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <h4>Pygame</h4><br>
+        <p>I wanted to build a game using the python library without taking anything from the internet(not even art). I tried to make a game that was 100% mine and I almost achieved it- only using external sources for music and getting more information about things I didn't understand in the docs.</p>
+          <div class="w3-row-padding" style="margin:0 -16px">
+            <div class="w3-half">
+              <img src="pr1.png" style="width:100%" class="w3-margin-bottom">
+            </div>
+            <div class="w3-half">
+              <img src="pr2.png" style="width:100%" class="w3-margin-bottom">
+          </div>
+        </div> 
+        <p><button type="button" class="w3-button w3-theme" onclick="window.location.href='https://github.com/SaurontheMighty/pygame';">Download Pygame</button></p>
+      </div>  
+      <div class="w3-row-padding">
+        <div class="w3-col m12">
+          <div class="w3-card w3-round w3-white">
+            <div class="w3-container w3-padding">
+              <p>I got really interested in building viruses and built quite a few(I used to send them to my friends saying they were games) along with antidotes (Another batch file which deleted all the virus files) for the ones that copied themselves to different folders. Here is a more or less harmless one(creates a bunch of popups and then shuts down your computer). Note- as these were written in Windows Batch they will only run on Windows machines.</p>
+	      <form method="get" action="virus2.bat">	
+              <button type="submit" class="w3-button w3-theme">Download</button>
+	      </form> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <h4>Bobrun</h4><br>
+        <p>Bobrun was created after many hours of drawing(those boulders, trees but the main character is a free picture I downloaded) and coding following some YouTube tutorials. I was initially going to put a link to the game but as I played it I realized that though it looked good and had a nice stoyline it was a bit cringy and I wasn't too keen on releasing it for the internet at large. Send me an email and perhaps I'll send it to you.</p>
+    <div class="w3-row-padding" style="margin:0 -16px">
+            <div class="w3-half">
+              <img src="br1.png" style="width:100%" class="w3-margin-bottom">
+            </div>
+            <div class="w3-half">
+              <img src="br3.png" style="width:100%" class="w3-margin-bottom">
+          </div>
+        </div> 
+
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom" onclick="window.location.href='https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&sacu=1&rip=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin';">Send me an email</button> 
+      </div> 
+      
+    <!-- End Middle Column -->
+    </div>
+    
+    <!-- Right Column -->
+    <div class="w3-col m2">
+      <div class="w3-card w3-round w3-white w3-center">
+        <div class="w3-container">
+          <p><strong>About me:</strong></p>
+          <p><i class='fas fa-fish'></i>7th Grade: My first project-ase-search</p>
+          <p><i class='fas fa-fish'></i>8th Grade: I coded a game in GameMaker called Bobrun</p>
+          <p><i class='fas fa-fish'></i>9th Grade: A movie rating website called JedisChoice</p>
+          <p><i class='fas fa-fish'></i>10th Grade: Java & many viruses written in Windows Batch</p>
+          <p><i class='fas fa-fish'></i>11th grade: Pygame</p>
+          <p><button type="button" class="w3-button w3-theme" onclick="window.location.href='https://github.com/SaurontheMighty/pygame';">Download Pygame</button></p>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="w3-card w3-round w3-white w3-center">
+        <div class="w3-container">
+          <p><strong>An Explanation of the Cookies</strong></p>
+          <p>The cookie stores your name so it doesn't have to ask you to enter your name every time you open the page. Once you have clicked to delete the cookie, reload the page to see the result. If you don't wish to enter your name you can click ok or cancel.</p>
+        </div>
+      </div>
+      <br>
+      
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+<!-- End Page Container -->
+</div>
+<br>
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-d5">
+  <p>W3 Social Media Template: https://www.w3schools.com/w3css/w3css_templates.asp</p>
+</footer>
+	
+<script>
+// Accordion
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-theme-d1";
+  } else { 
+    x.className = x.className.replace("w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-theme-d1", "");
+  }
+}
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
