@@ -5,13 +5,13 @@ public class project {
         System.out.println("Welcome to the GAME(use your imagination)");
         System.out.println("Move up and down while avoiding the asterisks");
         System.out.println("I mean...the asteroids!(use your imagination)");
-        System.out.println("Press 1 to start, move with ");
-        System.out.println("Press 2 to quit");
         boolean counter = true;
         do {
+            System.out.println("Press 1 to start");
+            System.out.println("Press 2 to quit");
             System.out.println("Enter a choice: ");
             int ch=sc.nextInt();
-
+            int score=0;
             switch(ch) {
                 case 1:
                     boolean live = true;
@@ -34,7 +34,7 @@ public class project {
                         System.out.println("UP/DOWN: ");
                         String cho = sc.next();
                         time = time + 1;
-
+                        score+=1;
                         spacex = "***";
                         boolean created =false;
                             switch (cho) {
@@ -120,6 +120,17 @@ public class project {
                                         System.out.println("--O-----U");
                                         System.out.println("----S----");
                                         System.out.println("-------T-");
+                                        System.out.println();
+                                        System.out.println("Your score is: "+score);
+                                        if(score<2) {
+                                            System.out.println("Your performance was poor.");
+                                        }
+                                        else if(score>2 && score <5) {
+                                            System.out.println("Your performance was average.");
+                                        }
+                                        else{
+                                            System.out.println("Your performance was excellent. I'm proud of you.");
+                                        }
 
                                     }
                                     break;
