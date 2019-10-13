@@ -1,5 +1,5 @@
 import java.util.*;
-public class project {
+public class game {
     public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
         System.out.println("Welcome to the GAME(use your imagination)");
@@ -39,6 +39,7 @@ public class project {
                         spacex = "***";
                         boolean created =false;
                             switch (cho) {
+                                case "w":
                                 case "W":
                                     if (pos != 1) {
                                         pos = pos - 1;
@@ -81,6 +82,7 @@ public class project {
                                     }
 
                                     break;
+                                case "s":
                                 case "S":
                                     if (pos != 5) {
                                         pos = pos + 1;
