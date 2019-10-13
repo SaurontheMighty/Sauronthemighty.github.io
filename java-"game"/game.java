@@ -29,9 +29,10 @@ public class project {
                     System.out.println(player + space + space);
                     System.out.println(space + space + space);
                     System.out.println(space + space + space);
+                    System.out.println("W to move up, S to move down or Q to quit");
+                    System.out.println("Note: If you're on the topmost level and you press W you will stay there.");
                     do {
-                        System.out.println("W TO MOVE UP, AND S TO MOVE DOWN or Q to quit");
-                        System.out.println("UP/DOWN: ");
+                        System.out.println("W/S: ");
                         String cho = sc.next();
                         time = time + 1;
                         score+=1;
@@ -122,10 +123,10 @@ public class project {
                                         System.out.println("-------T-");
                                         System.out.println();
                                         System.out.println("Your score is: "+score);
-                                        if(score<2) {
-                                            System.out.println("Your performance was poor.");
+                                        if(score<=3) {
+                                            System.out.println("Your performance was poor. I am displeased.");
                                         }
-                                        else if(score>2 && score <5) {
+                                        else if(score>3 && score <7) {
                                             System.out.println("Your performance was average.");
                                         }
                                         else{
