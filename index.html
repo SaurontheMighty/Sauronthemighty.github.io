@@ -85,6 +85,7 @@ function getIP(json) {
 }
 function delCookie() {
     window.document.cookie = "username=; expires=Wed, 24 Apr 2002 00:00:00 UTC; path=/;";
+    alert("Cookie Deleted!");
 }
 </script>
 <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
@@ -152,6 +153,7 @@ function delCookie() {
     </div>
 	<p></p>
 	<a onclick="alert(ip)" style="cursor: pointer;">P.S. Want to know your IP address?</a>
+	<p>(This information is neither stored nor shared)<p>
       </div>
     
     <!-- End Left Column -->
