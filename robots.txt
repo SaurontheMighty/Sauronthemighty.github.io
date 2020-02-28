@@ -1,7 +1,5 @@
 User-agent: Googlebot
-Disallow: /index2.html/
-Disallow: /index3.html/
+Disallow: /index4.html/
 
 User-agent: DuckDuckBot
-Disallow: /index2.html/
-Disallow: /index3.html/
+Disallow: /index4.html/
