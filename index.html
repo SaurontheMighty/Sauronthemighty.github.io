@@ -87,7 +87,15 @@ function checkCookie() {
        setCookie("username", user, 30);
      }
   }
-  document.getElementById("name").innerHTML = "Hey "+user+"!";
+  if(user!="" && user!=null){
+    document.getElementById("name").innerHTML = "Hey "+user+"!";
+  }
+  else if(user==""){
+    document.getElementById("name").innerHTML = "Hi!";
+  }
+  else{
+    document.getElementById("name").innerHTML = "Hey John Doe!";
+  }
 }
 function getIP(json) {
     window.ip = json.ip;
@@ -157,15 +165,23 @@ function delCookie() {
           <i class="fa fa-remove"></i>
         </span>
         <strong><p id="name"></p></strong>
-    <div class="tooltip">
-		<p>We use cookies to store your name! To delete the cookie just press <a onclick="delCookie(document.cookie)" style="cursor: pointer;">this.</a></p>
-    <span class="tooltiptext">See Right-hand Column</span>
-    </div>
-	<p></p>
-	<a onclick="alert(ip)" style="cursor: pointer;">P.S. Want to know your IP address?</a>
-	<p id="small">(This information is neither stored nor shared)<p>
+      <div class="tooltip">
+      <p>We use cookies to store your name! To delete the cookie just press <a onclick="delCookie(document.cookie)" style="cursor: pointer;">this.</a></p>
+      <span class="tooltiptext">See Right-hand Column</span>
       </div>
-    
+      <p></p>
+      <a onclick="alert(ip)" style="cursor: pointer;">P.S. Want to know your IP address?</a>
+      <p id="small">(This information is neither stored nor shared)<p>
+      </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <div class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small">
+        <span onclick="this.parentElement.style.display='none'" class="w3-button w3-theme-l3 w3-display-topright">
+          <i class="fa fa-remove"></i>
+        </span>
+        <strong><p id="name"></p></strong>
+      <p>The "Download" button opens up the GitHub repository for the project. You can download the files from there if you wish to.</p>
+      </div>
+
     <!-- End Left Column -->
     </div>
     
@@ -178,7 +194,7 @@ function delCookie() {
                 <h4>Android App</h4>
                 <hr class="w3-clear">
                 <p>I wanted to build a productivity app which could time me and store the total time I study each day. Currently the app has three modes: stopwatch, pomodoro and timer. As of now it doesn't store total time but that's something I plan on adding.</p>
-                <p>I usually build tools that I need. My first productivity tool was called Ashish Life Solutions and it was a simple swift script that ran in the background and reminded me to take an eyebreak with a notification every 10 minutes. I built it because I couldn't find any free MacOS apps that could send a custom notification every few minutes.</p>
+                <p>I usually build tools that I need. My first productivity tool was called Ashish Life Solutions and it was a simple swift script that ran in the background and reminded me to take an eyebreak with a notification every 10 minutes. I built it because I couldn't find any free MacOS apps that simply reminded me to take an eyebreak every few minutes.</p>
                 <p>The app has a modular design so that I can keep adding features as I get time.</p>
 		<div class="w3-row-padding" style="margin:0 -16px">
                     <div class="w3-half">
@@ -227,9 +243,21 @@ function delCookie() {
       	<h4>IMS</h4>
           <hr class="w3-clear">
           <p>A simple Inventory Management System made with Python. This was initially made for my grade 11 computer science class. Although it was supposed to be a really simplistic system with functions to just add, edit and remove items I got carried away and added a lot of extra features. Additional features include a text file to store inventory, so that the changes made are stored. The program also has a shopping cart which stores the items the customer wants to purchase.</p>
-	  <p><button type="button" class="w3-button w3-theme" onclick="window.open('https://github.com/SaurontheMighty/Inventory-Management','_blank')">Download</button></p><br>
+	  <p><button type="button" class="w3-button w3-theme" onclick="window.open('https://github.com/SaurontheMighty/Inventory-Management','_blank')">Download</button></p>
       </div>
       <div class="w3-container w3-card w3-white w3-round w3-margin">
+      	<h4>ASE Search</h4>
+          <hr class="w3-clear">
+          <p>In the 7th grade I found w3schools.com and I started coding in HTML, CSS and some very basic JavaScript. I had the rather ambitious goal of building my own search engine but only knowing HTML and CSS put a damper on my ambitions. </p>
+          <p>Instead I used GET and POST to query directly to websites. I got a free subdomain from 000webhost and I set my website up as a homepage. You could click on the page for a website like YouTube or Twitter and type a query into the search bar. ASE Search would then open up the search results in that website.</p>
+          <p>The idea was that you would be able to skip the steps of going to the website and then searching but it wasn't anything great. I don't have all the files or the last updates I made because I didn't back up the website files and the website was deleted because of inactivity. </p>
+          <p>I've uploaded all the files I do have.</p>
+          <div class="w3-row-padding" style="margin:0 -16px">
+              <img src="images/ase.png" style="width:100%" class="w3-margin-bottom">
+          </div>
+      	  <p><button type="button" class="w3-button w3-theme" onclick="window.open('https://github.com/SaurontheMighty/ase-search','_blank')">Open</button></p>
+      </div>
+    <div class="w3-container w3-card w3-white w3-round w3-margin">
 	  <h4>.Bat Viruses</h4>
           <hr class="w3-clear">
           <p>I got really interested in building viruses and built quite a few(I used to send them to my friends) along with antidotes (Another batch file which deleted all the virus files). Here is a more or less harmless one(creates a bunch of popups and then shuts down your computer). Note- as these were written in Windows Batch they will only run on Windows machines.</p>
@@ -293,7 +321,7 @@ function delCookie() {
       <div class="w3-card w3-round w3-white w3-center">
         <div class="w3-container">
           <p><strong>An Explanation for the Cookies</strong></p>
-          <p>The cookie stores your name so that it doesn't have to ask you to enter your name every time you open the page. I created the cookies because the concept always intrigued me and I wanted to build my own. If you don't wish to enter your name you can click ok or cancel. </p>
+          <p>The cookie stores your name so that it doesn't ask for your name everytime you visit the page. But why have cookies in the first place? The concept of cookies always intrigued me and I thought it would be fun to make my own. If you don't wish to enter your name you can click ok or cancel. </p>
         </div>
       </div><br>
       
