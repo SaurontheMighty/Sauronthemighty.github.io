@@ -1,0 +1,70 @@
+.page-header{
+    text-align: center;
+    padding: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.about-card{
+    flex: 1;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid #f1f1f1;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.about-card p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.search-card{
+    margin: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    width: 92%;
+    border-radius: 50px;
+    color: #000000;
+    background: #f6f7f8;
+}
+
+.search-button{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 50px;
+    color: #000000;
+    background: #f6f7f8;
+}
+
+.main-card{
+    flex: 3;
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #f1f1f1;
+}
+
+.main-card p{
+    font-size: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    font-family: BlinkMacSystemFont, Arial, Helvetica, sans-serif;
+}
+
+footer{
+    border-top: 1px solid #f1f1f1;
+    word-spacing: 2px;
+    text-align: center;
+    font-family: BlinkMacSystemFont, Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0px;
+}
