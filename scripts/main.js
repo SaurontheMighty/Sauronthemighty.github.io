@@ -2,7 +2,7 @@ function searchButton(){
     reset();
     var text2 = document.getElementById("search-bar").value;
     //Make all sections hidden
-    text=text2;
+    text=text2.toLowerCase();
     if(text2==''){
         text = 'adhfslkjghdslkjghskldfhglskjgfhlksdjhglskdg';
     }

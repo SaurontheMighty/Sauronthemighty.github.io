@@ -7,16 +7,38 @@
 
 .about-card{
     flex: 1;
+    text-align: center;
     margin-right: 10px;
-    padding: 10px;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 20px;
     border-radius: 15px;
     border: 1px solid #f1f1f1;
     font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.about-card p{
-    font-size: 20px;
-    text-align: center;
+.about-details p{
+    font-size: 14px;
+    font-family: -apple-system,BlinkMacSystemFont, Arial, Helvetica, sans-serif;
+}
+
+.about-details-header{
+    font-family: sans-serif;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.about-button{
+    cursor: pointer;
+    border: 1px solid #f1f1f1;
+    border-radius: 15px;
+}
+
+.avatar{
+    margin: 3px;
+    width: 35%;
+    border-radius: 50%;
 }
 
 .search-card{
@@ -34,6 +56,7 @@
 }
 
 .search-button{
+    cursor: pointer;
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 50px;
@@ -81,6 +104,7 @@ main {
 }
 
 .back-button{
+    cursor: pointer;
     margin: 10px;
     padding-top: 5px;
     padding-bottom: 5px;

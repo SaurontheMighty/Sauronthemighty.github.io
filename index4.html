@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>SaurontheMighty</title>
+<title>Ashish Selvaraj</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Personal Projects">
@@ -24,7 +24,14 @@
   <main>
   <!-- About Card -->
   <section class = "about-card">
-    <p>About Me</p>
+    <p class="section-header">About Me</p>
+    <img src="images/avatar.png" class="avatar">
+    <section class="about-details">
+      <p class="about-details-header">Favorite Books:</p>
+      <p><i class="fa fa-book"></i> Lord of the Rings, Harry Potter, Redwall</p>
+      <p class="about-details-header">Hobbies:</p>
+      <p><i class="fa fa-chess"></i> Chess, Guitar, Skateboarding, bicycling</p>
+    </section>
   </section>
 
   <!-- Main Body -->
@@ -33,17 +40,23 @@
 
     <!-- Search by Tags -->
     <section>
-      <input type="text" placeholder="Search by Technology" class = "search-card" id="search-bar"><button type="submit" class="search-button" id="search-button" onclick="searchButton()"><i class="fas fa-search"></i></button>
+      <input type="text" placeholder="Search by Title or Technology" class = "search-card" id="search-bar"><button type="submit" class="search-button" id="search-button" onclick="searchButton()"><i class="fas fa-search"></i></button>
     </section>
     <section class = "about-card hidden" id="test">
       <p>Sorry, no posts were found!</p>
     </section>
 
     <!-- Posts -->
-    <section class = "post introspekt">
+    <section class = "post introspekt flutter dart firebase cloud functions firestore">
       <h4>Introspekt</h4>
       <p>My biggest project so far.</p>
     </section>
+    
+    <section class = "post htoo flutter dart hackathon hack-a-thon">
+      <h4>H to O</h4>
+      <p>A project I built with some friends for a hackathon.</p>
+    </section>
+
     <button type="submit" class="back-button hidden" id="back-button" onclick="reset()">Back</button>
   </section>
 
