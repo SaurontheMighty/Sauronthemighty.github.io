@@ -29,19 +29,22 @@
 
   <!-- Main Body -->
   <section class = "main-card">
-    <p>Posts</p>
+    <p class="section-header">Posts</p>
+
     <!-- Search by Tags -->
     <section>
-      <input type="text" placeholder="Search by Technology" class = "search-card"><button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+      <input type="text" placeholder="Search by Technology" class = "search-card" id="search-bar"><button type="submit" class="search-button" id="search-button" onclick="searchButton()"><i class="fas fa-search"></i></button>
     </section>
-    <section class = "about-card">
-      <p>Sorry, this feature doesn't work yet!</p>
+    <section class = "about-card hidden" id="test">
+      <p>Sorry, no posts were found!</p>
     </section>
+
     <!-- Posts -->
-    <section class = "post">
-
+    <section class = "post introspekt">
+      <h4>Introspekt</h4>
+      <p>My biggest project so far.</p>
     </section>
-
+    <button type="submit" class="back-button hidden" id="back-button" onclick="reset()">Back</button>
   </section>
 
   <!--  -->

@@ -20,7 +20,10 @@
 }
 
 .search-card{
-    margin: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 20px;
@@ -38,6 +41,8 @@
     background: #f6f7f8;
 }
 
+.hidden {display: none;}
+
 .main-card{
     flex: 3;
     border-radius: 8px;
@@ -45,9 +50,26 @@
     border: 1px solid #f1f1f1;
 }
 
-.main-card p{
+.section-header{
     font-size: 20px;
     text-align: center;
+}
+
+.post{
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #f1f1f1;
+}
+
+.post h4{
+    padding: 15px;
+    font-size: 18px;
+    font-family: BlinkMacSystemFont, Arial, Helvetica, sans-serif;
+}
+
+.post p{
+    padding: 10px;
 }
 
 main {
@@ -55,6 +77,16 @@ main {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
+    font-family: BlinkMacSystemFont, Arial, Helvetica, sans-serif;
+}
+
+.back-button{
+    margin: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 50px;
+    color: #000000;
+    background: #f6f7f8;
     font-family: BlinkMacSystemFont, Arial, Helvetica, sans-serif;
 }
 
