@@ -11,12 +11,16 @@ function searchButton(){
         allList[i].classList.add('hidden');
     }
     //Find the sections with the title
-    var newList = document.querySelectorAll(`.${text}`);
-    console.log(text);
-    console.log(newList);
-    for(var i=0; i<newList.length;i++){
-        newList[i].classList.remove('hidden');
+    var allResults = text.split(' ');
+    console.log(allResults);
+    for(var i=0; i<allResults.length;i++){
+        var newList = document.querySelectorAll(`.${allResults[i]}`);
+        console.log(newList);
+        for(var j=0; j<newList.length;j++){
+            newList[j].classList.remove('hidden');
+        }
     }
+    
     //If there are none show error
     if(newList.length==0){
         document.querySelector("#test").classList.remove("hidden");
