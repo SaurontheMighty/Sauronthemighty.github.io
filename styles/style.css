@@ -2,7 +2,7 @@
     text-align: center;
     padding: 15px;
     font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, 'Open Sans', 'Helvetica Neue', sans-serif;
-    border-bottom: 1px solid #f1f1f1;
+    border-bottom: 1px solid #e2e0e0;
 }
 
 .about-card{
@@ -14,7 +14,7 @@
     padding-right: 5px;
     padding-bottom: 20px;
     border-radius: 15px;
-    border: 1px solid #f1f1f1;
+    border: 1px solid #ececec;
     font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -29,10 +29,40 @@
     padding-top: 10px;
 }
 
-.about-button{
+.small-tags li{
     cursor: pointer;
+    font-size: x-small;
+    display: inline;
+    padding-right: 8px;
+    padding-left: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 2px;
+    border: 1px solid #f1f1f1;
+    background-color: #ffffff;
+    color: #620000;
+}
+
+.links{
+    margin: 40px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.about-button{
+    margin: 5px;
+    cursor: pointer;
+    height: fit-content;
+    width: fit-content;
     border: 1px solid #f1f1f1;
     border-radius: 15px;
+}
+
+.abt-btn-img{
+    filter: grayscale(100%);
+    margin: 2px;
+    height: 50%;
+    width: 50%;
 }
 
 .avatar{
@@ -70,7 +100,7 @@
     flex: 3;
     border-radius: 8px;
     padding: 10px;
-    border: 1px solid #f1f1f1;
+    border: 1px solid #ececec;
 }
 
 .section-header{
@@ -86,7 +116,7 @@
 }
 
 .post h4{
-    padding: 15px;
+    padding: 10px;
     font-size: 18px;
     font-family: BlinkMacSystemFont, Arial, Helvetica, sans-serif;
 }
@@ -100,10 +130,18 @@ ul{
     padding-top: 15px;
     padding-left: 12px;
     list-style: none;
+}
+
+.tags{
     border-top: 1px solid #f1f1f1;
+    margin-top: 10px;
+    padding-top: 15px;
+    padding-left: 12px;
+    list-style: none;
 }
 
 .tags li{
+    cursor: pointer;
     font-size: small;
     display: inline;
     padding-right: 10px;
@@ -135,7 +173,7 @@ main {
 }
 
 footer{
-    border-top: 1px solid #f1f1f1;
+    border-top: 1px solid #e2e0e0;
     word-spacing: 2px;
     text-align: center;
     font-family: BlinkMacSystemFont, Arial, Helvetica, sans-serif;

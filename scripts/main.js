@@ -28,7 +28,6 @@ function searchButton(){
     document.getElementById("back-button").classList.remove('hidden');
 }
 
-
 function reset(){
     var allList = document.querySelectorAll('.post');
     for(var i=0; i<allList.length;i++){
@@ -36,4 +35,10 @@ function reset(){
     }
     document.querySelector("#test").classList.add("hidden");
     document.getElementById("back-button").classList.add('hidden');
+}
+
+function liSearch(text){
+    console.log(text);
+    document.getElementById("search-bar").value = text;
+    document.getElementById("search-button").click();
 }

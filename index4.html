@@ -27,10 +27,23 @@
     <p class="section-header">About Me</p>
     <img src="images/avatar.png" class="avatar">
     <section class="about-details">
+      <p class="about-details-header">Interests:</p>
+      <p>Python, Java, Math, Raspberry Pi, App Development</p>
+      <!-- <ul class="small-tags">
+        <li>Raspberry Pi</li>
+        <li>Math</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>App Development</li>
+      </ul> -->
       <p class="about-details-header">Favorite Books:</p>
       <p><i class="fa fa-book"></i> Lord of the Rings, Harry Potter, Redwall</p>
       <p class="about-details-header">Hobbies:</p>
       <p><i class="fa fa-chess"></i> Chess, Guitar, Skateboarding, bicycling</p>
+    </section>
+    <section class="links">
+      <button class="about-button" onclick="window.open('https://github.com/SaurontheMighty/','_blank')"><img class='abt-btn-img' src="images/githublogo.png"></button>
+      <button class="about-button" onclick="window.open('https://www.linkedin.com/in/ashish-selvaraj-639109196/','_blank')"><img class='abt-btn-img' src="images/linkedinlogo.png"></button>
     </section>
   </section>
 
@@ -47,18 +60,21 @@
     </section>
 
     <!-- Posts -->
-    <section class = "post introspekt flutter dart firebase firestore cloud functions admob in app messaging">
+    <section class = "post introspekt flutter dart firebase firestore cloud functions admob in-app-messaging">
       <h4>Introspekt</h4>
       <p>My biggest project so far.</p>
       <ul class="tags">
-        <li>Flutter</li>
-        <li>Dart</li>
-        <li>Firebase</li>
-        <li>Firestore</li>
-        <li>Cloud Functions</li>
-        <li>AdMob</li>
-        <li>in-app-messaging</li>
+        <li onclick="liSearch('Flutter')">Flutter</li>
+        <li onclick="liSearch('Dart')">Dart</li>
+        <li onclick="liSearch('Firebase')">Firebase</li>
+        <li onclick="liSearch('Firestore')">Firestore</li>
+        <li onclick="liSearch('Cloud Functions')">Cloud Functions</li>
+        <li onclick="liSearch('AdMob')">AdMob</li>
+        <li onclick="liSearch('in-app-messaging')">in-app-messaging</li>
       </ul>
+      <article class="introspekt-more hidden">
+        <p>I'm close to publishing it on the Play Store, I'll write about it then!</p>
+      </article>
     </section>
     
     <section class = "post htoo flutter dart google maps firestore firebase hackathon hack-a-thon">
