@@ -29,18 +29,25 @@
     padding-top: 10px;
 }
 
+.small-tags{
+    margin-top: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 12px;
+    list-style: none;
+    font-size: smaller;
+    border-top: 1px solid #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+}
+
 .small-tags li{
     cursor: pointer;
-    font-size: x-small;
+    font-size: smaller;
     display: inline;
-    padding-right: 8px;
-    padding-left: 8px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    border-radius: 2px;
-    border: 1px solid #f1f1f1;
-    background-color: #ffffff;
-    color: #620000;
+    padding: 6px;
+    border-radius: 15px;
+    background-color: rgb(196, 105, 105);
+    color: #ffff;
 }
 
 .links{
@@ -123,13 +130,6 @@
 
 .post p{
     padding: 10px;
-}
-
-ul{
-    margin-top: 10px;
-    padding-top: 15px;
-    padding-left: 12px;
-    list-style: none;
 }
 
 .tags{
