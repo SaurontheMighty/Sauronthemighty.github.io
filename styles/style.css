@@ -95,6 +95,26 @@
     padding: 10px;
 }
 
+ul{
+    margin-top: 10px;
+    padding-top: 15px;
+    padding-left: 12px;
+    list-style: none;
+    border-top: 1px solid #f1f1f1;
+}
+
+.tags li{
+    font-size: small;
+    display: inline;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 12px;
+    border: 1px solid #f1f1f1;
+    color: #818181;
+}
+
 main {
     padding: 10px;
     display: flex;
@@ -124,3 +144,16 @@ footer{
 body{
     margin: 0px;
 }
+
+@media screen and (max-width: 700px) {
+    main {   
+      flex-direction: column;
+    }
+    .about-card{
+        margin-bottom: 5px;
+    }
+    .search-card{
+        padding-left: 15px;
+        width: 75%;
+    }
+  }

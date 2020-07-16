@@ -28,6 +28,7 @@ function searchButton(){
     document.getElementById("back-button").classList.remove('hidden');
 }
 
+
 function reset(){
     var allList = document.querySelectorAll('.post');
     for(var i=0; i<allList.length;i++){
