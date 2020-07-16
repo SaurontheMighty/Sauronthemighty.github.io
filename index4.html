@@ -37,9 +37,9 @@
         <li>App Development</li>
       </ul>
       <p class="about-details-header">Favorite Books:</p>
-      <p><i class="fa fa-book"></i> Lord of the Rings, Harry Potter, Redwall</p>
+      <p class="div"><i class="fa fa-book"></i> Lord of the Rings, Harry Potter, Redwall</p>
       <p class="about-details-header">Hobbies:</p>
-      <p><i class="fa fa-chess"></i> Chess, Guitar, Skateboarding, bicycling</p>
+      <p class="div"><i class="fa fa-chess"></i> Chess, Guitar, Skateboarding, bicycling</p>
     </section>
     <section class="links">
       <button class="about-button" onclick="window.open('https://github.com/SaurontheMighty/','_blank')"><img class='abt-btn-img' src="images/githublogo.png"></button>
@@ -62,8 +62,12 @@
 
     <!-- Posts -->
     <section class = "post introspekt flutter dart firebase firestore cloud functions admob in-app-messaging">
-      <h4>Introspekt</h4>
+      <h4 onclick="showMore('introspekt')">Introspekt</h4>
       <p>My biggest project so far.</p>
+      <p onclick="showMore('introspekt')" class="readmore" id="introspektreadmore">...</p>
+      <article id='introspekt' class="hidden">
+        <span>I'm close to publishing it on the Play Store, I'll write about it then!</span>
+      </article>
       <ul class="tags">
         <li onclick="liSearch('Flutter')">Flutter</li>
         <li onclick="liSearch('Dart')">Dart</li>
@@ -73,14 +77,15 @@
         <li onclick="liSearch('AdMob')">AdMob</li>
         <li onclick="liSearch('in-app-messaging')">in-app-messaging</li>
       </ul>
-      <article class="introspekt-more hidden">
-        <p>I'm close to publishing it on the Play Store, I'll write about it then!</p>
-      </article>
     </section>
     
     <section class = "post htoo flutter dart google maps firestore firebase hackathon hack-a-thon">
-      <h4>H to O</h4>
+      <h4 onclick="showMore('htoo')">H to O</h4>
       <p>A project I built with some friends for a hackathon.</p>
+      <p onclick="showMore('htoo')" class="readmore" id="htooreadmore">...</p>
+      <article id='htoo' class="hidden">
+        <span class="more" markdown=1>So far I've attended 2 online hackathons organized by MLH and I've built Flutter projects for both!<br><p id='more'>The first project is called H to O and the main idea behind this was to create an app that would allow you to create a shopping list of the items you need and then show you the store that was closest to you and had the items you wanted. I used the Google Maps API to create the map and add the markers which showed each location. When you tap the description it takes you to a Google Maps page with the directions to the store. I also pulled data from our Firestore database and updated the maps accordingly. Any change in the inventory of the store can be quickly reflected in the map. This was a really fun project for me because I got to learn how to use the Google Maps API which I hadn't used before.</p><br><div class='align'><img class="appimg" width="30%" src='images/flutter2.jpg'></div><br><p id="more">The other project is called FoodConnect and it's designed to connect donors to the Foodbanks. The idea was that a donor could add the items they have and the app would connect them to a Foodbank that needed those items.</p></span>
+      </article>
       <ul class="tags">
         <li>Flutter</li>
         <li>Dart</li>
@@ -92,8 +97,12 @@
     </section>
 
     <section class = "post productivity ductivitypro javascript html css browser extension">
-      <h4>ductivityPro</h4>
+      <h4 onclick="showMore('ductivitypro')">ductivityPro</h4>
       <p>A browser extension for Chrome and Firefox.</p>
+      <p onclick="showMore('ductivitypro')" class="readmore" id="ductivityproreadmore">...</p>
+      <article id='ductivitypro' class="hidden">
+        <span class="more">I'm close to publishing it on the Play Store, I'll write about it then!</span>
+      </article>
       <ul class="tags">
         <li>Browser Extension</li>
         <li>HTML</li>

@@ -42,3 +42,8 @@ function liSearch(text){
     document.getElementById("search-bar").value = text;
     document.getElementById("search-button").click();
 }
+
+function showMore(id){
+    document.getElementById(id).classList.remove('hidden');
+    document.getElementById(id+'readmore').classList.add('hidden');
+}

@@ -50,8 +50,13 @@
     color: #ffff;
 }
 
+.div{
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
 .links{
-    margin: 40px;
+    margin: 20px;
     flex-direction: row;
     justify-content: space-around;
 }
@@ -123,6 +128,7 @@
 }
 
 .post h4{
+    cursor: pointer;
     padding: 10px;
     font-size: 18px;
     font-family: BlinkMacSystemFont, Arial, Helvetica, sans-serif;
@@ -159,6 +165,29 @@ main {
     justify-content: space-around;
     flex-direction: row;
     font-family: BlinkMacSystemFont, Arial, Helvetica, sans-serif;
+}
+
+.align{
+    text-align: center;
+}
+
+article{
+    padding: 10px;
+}
+
+.appimg{
+    border-radius: 32px;
+}
+
+.more{
+    text-indent: 30px;
+    line-height: 2;
+    word-spacing: 1.5;
+}
+
+.readmore{
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .back-button{
