@@ -43,7 +43,43 @@ function liSearch(text){
     document.getElementById("search-button").click();
 }
 
-function showMore(id){
+function showMore(id,x){
     document.getElementById(id).classList.remove('hidden');
     document.getElementById(id+'readmore').classList.add('hidden');
+    if(x!=null){
+      showSlides(slideIndex,x);
+    }
+}
+
+var slideIndex = 1;
+//showSlides(slideIndex,2);
+
+function plusSlides(n,x) {
+  showSlides(slideIndex += n,x);
+}
+
+function currentSlide(n,x) {
+  showSlides(slideIndex = n,x);
+}
+
+function showSlides(n,x) {
+  console.log("Index"+n.toString());  
+  console.log("Slides"+x.toString());  
+  var i;
+  console.log(`slider${x}`);
+  var slides = document.getElementsByClassName(`slider${x}`);
+  console.log("Slides"+slides.length);
+  var dots = document.getElementsByClassName(`dot${x}`);
+  console.log("Dots"+dots.length);
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active-dot", "");
+  }
+  console.log("Number of Slides"+slides.length);
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active-dot";
 }

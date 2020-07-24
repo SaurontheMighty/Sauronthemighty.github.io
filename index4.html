@@ -54,7 +54,7 @@
 
     <!-- Search by Tags -->
     <section>
-      <input type="text" placeholder="Search by Title or Technology" class = "search-card" id="search-bar"><button type="submit" class="search-button" id="search-button" onclick="searchButton()"><i class="fas fa-search"></i></button>
+      <input onkeydown="if (event.keyCode == 13) { document.getElementById(`search-button`).click(); return false; }" type="text" placeholder="Search by Title or Technology" class = "search-card" id="search-bar"><button type="submit" class="search-button" id="search-button" onclick="searchButton()"><i class="fas fa-search"></i></button>
     </section>
     <section class = "about-card hidden" id="test">
       <p>Sorry, no posts were found!</p>
@@ -97,30 +97,56 @@
     </section>
 
     <section class = "post productivity ductivitypro javascript html css browser extension">
-      <h4 onclick="showMore('ductivitypro')">ductivityPro</h4>
+      <h4 onclick="showMore('ductivitypro',1)">ductivityPro</h4>
       <p>A browser extension for Chrome and Firefox.</p>
-      <p onclick="showMore('ductivitypro')" class="readmore" id="ductivityproreadmore">...</p>
+      <p onclick="showMore('ductivitypro',1)" class="readmore" id="ductivityproreadmore">...</p>
       <article id='ductivitypro' class="hidden">
         <span class="more"><p id='more'>With the pandemic, most of us are home and I thought this would be the perfect time to build a productivity extension. With recommendation algorithms getting better and better its often really easy to spend far more time on website than you wanted to, this is what inspired me to build ductivityPRO(pro-ductivity).</p>
           <p id='more'>Once you install the extension, you'll notice its icon in the toolbar. Clicking this opens up its popup where you can set the amount of time that you want to be on that page. Once this time is over, the extension notifies you and tilts the page preventing you from spending any more time on it. The amount of tilt and the width of the border is fully customizable (both can be set to zero) and can be set from the preferences menu. This can be accessed by clicking the settings icon on the top right hand corner of the popup. Once a timer is set, you can click on the toolbar icon to check how much time is left.<br></p>
-          <div class="slides">
-            <div id="slide1">1</div>  
-            <div id="slide2">2</div>
-            <div id="slide3">3</div>
-            <div id="slide4">4</div>
+        </span>
+          <br>
+          <div class="slideshow-container">
+            <div class="mySlides slider1">
+              <div style="text-align: center;">
+                <img src="images/dpext1.png" class="slide-img" width="80%">
+              </div>
+              <div class="caption-text">Set a Timer</div>
+            </div>
+            <div class="mySlides slider1">
+              <div style="text-align: center;">
+                <img src="images/dpext2.png" class="slide-img" width="80%">
+              </div>
+              <div class="caption-text">Timer in Progress</div>
+            </div>
+            <div class="mySlides slider1">
+              <div style="text-align: center;">
+                <img src="images/dpext3.png" class="slide-img" width="80%">
+              </div>
+              <div class="caption-text">Timer has Rung</div>
+            </div>
+            <div class="mySlides slider1">
+              <div style="text-align: center;">
+                <img src="images/dpext4.png" class="slide-img" width="80%">
+              </div>
+              <div class="caption-text">Settings</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1,1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1,1)">&#10095;</a>
           </div>
-          <section id="navSlide">
-            <a href="#slide1"><button class="circleI">1</button></a>
-            <a href="#slide2"><button class="circleI">2</button></a>
-            <a href="#slide3"><button class="circleI">3</button></a>
-            <a href="#slide4"><button class="circleI">4</button></a>
+          <br>
+          <section style="text-align:center">
+            <span class="dot dot1" onclick="currentSlide(1,1)"></span> 
+            <span class="dot dot1" onclick="currentSlide(2,1)"></span> 
+            <span class="dot dot1" onclick="currentSlide(3,1)"></span> 
+            <span class="dot dot1" onclick="currentSlide(4,1)"></span> 
           </section>
+          <br>
           <p id='more'>Another feature is "disable polymer" which can be enabled from the options menu. With YouTube's (relatively) new polymer design, you can't go back into full screen mode once the alarm rings. Once you enable this feature, the extension reverts YouTube to it's old design whenever it detects that you're watching a video. But if you're using this to curb your binge watching addiction you may want to leave YouTube as is.</p>
           <p id='more'>In order to put it on addons.mozilla.org, I had to choose a license. This was a really good learning experience because I learned about all the open source licenses and the pros and cons of each one. This is the important but less exciting part of building projects.</p>
           <p id='more'>I built a version for Google Chrome as well as Firefox. It was a really interesting process to learn how each platform differed. The current source code on Github has all the features and will work for both platforms.</p>
-        </span>
           <div class="align">
-          <a id='more' href="https://addons.mozilla.org/en-US/firefox/addon/ductivitypro/" target="_blank">Check it out on the Firefox store!</a><br></div><div class="align">
+          <a id='more' href="https://addons.mozilla.org/en-US/firefox/addon/ductivitypro/" target="_blank">Check it out on the Firefox store!</a><br></div><div class="align"><br>
           <a id='more' href='https://chrome.google.com/webstore/detail/ductivitypro/ldmdmicajobgfjllgmmcifkmgpohkpji' target="_blank">Check it out on the Chrome Web Store!</a><br><br><br>
           </div>
           <span>The full feature list is on GitHub and in the details on the installation page.</span>
@@ -136,11 +162,37 @@
     </section>
 
     <section class = "post pygame python adventure fireball">
-      <h4 onclick="showMore('fireball')">Fireball</h4>
+      <h4 onclick="showMore('fireball',2)">Fireball</h4>
       <p>A game I made with the Python library pygame. I even drew the graphics for the game!</p>
-      <p onclick="showMore('fireball')" class="readmore" id="fireballreadmore">...</p>
+      <p onclick="showMore('fireball',2)" class="readmore" id="fireballreadmore">...</p>
       <article id='fireball' class="hidden">
-        <span class="more">This project is one of my favorites and one that I had a lot of fun making. Its an obstacle avoidace game but instead of going on infinitely like the others it has a BOSS FIGHT and an ending!</span>
+        <span class="more"><p id="more">This project is one of my favorites and one that I had a lot of fun making. Its an obstacle avoidace game but instead of going on infinitely like the others it has a BOSS FIGHT and an ending! 
+        </span>
+          <br>
+          <div class="slideshow-container">
+            <div class="mySlides slider2">
+              <div style="text-align: center;">
+                <img src="images/pr2.png" class="slide-img" width="80%">
+              </div>
+              <div class="caption-text">Level 1</div>
+            </div>
+            <div class="mySlides slider2">
+              <div style="text-align: center;">
+                <img src="images/pr1.png" class="slide-img" width="80%">
+              </div>
+              <div class="caption-text">Level 2</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1,2)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1,2)">&#10095;</a>
+          </div>
+          <br>
+          <section style="text-align:center">
+            <span class="dot dot2" onclick="currentSlide(1,2)"></span> 
+            <span class="dot dot2" onclick="currentSlide(2,2)"></span> 
+          </section>
+          <br>
+          <p id="more">I made this game using pygame the python library. I wanted to make a game that was 100% mine and even drew the art myself on piskelapp. Only the music files aren't mine, all sources are listed in the code. The highscore is stored in a seprate text file that the program writes to so that it remembers your high score. The game has two levels, with the second one being the bossfight. The boss fight has a moving enemy that shoots projectiles. The user can also attack the enemy when his charge gets restored.</p>
       </article>
       <ul class="tags">
         <li>Python</li>
@@ -154,7 +206,7 @@
       <p>A GUI Java Employee Management application.</p>
       <p onclick="showMore('simpleems')" class="readmore" id="simpleemsreadmore">...</p>
       <article id='simpleems' class="hidden">
-        <span class="more">An GUI Employee Management application built with Java.</span>
+        <span class="more">I have also been building an "Employee Management System" as a school assignment. It's a Swing GUI application written in Java on Netbeans. It is designed as Enterprise software and has functions to add employees, edit employee information, see all employees and remove employees. All the information is stored locally, I am looking into ways to encrypt this information.</span>
       </article>
       <ul class="tags">
         <li>Java</li>
