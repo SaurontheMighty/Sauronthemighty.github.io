@@ -33,7 +33,7 @@
     margin-top: 10px;
     padding-top: 15px;
     padding-bottom: 15px;
-    padding-left: 12px;
+    padding-left: 0px;
     list-style: none;
     font-size: smaller;
     border-top: 1px solid #f1f1f1;
@@ -41,10 +41,11 @@
 }
 
 .small-tags li{
+    margin: auto;
     cursor: pointer;
     font-size: smaller;
     display: inline;
-    padding: 6px;
+    padding: 5px;
     border-radius: 15px;
     background-color: rgb(196, 105, 105);
     color: #ffff;
@@ -275,7 +276,7 @@ body{
     display: inline-block;
     transition: background-color 0.6s ease;
 }
-  
+
 .active-dot{
     background-color: #515151;
 }

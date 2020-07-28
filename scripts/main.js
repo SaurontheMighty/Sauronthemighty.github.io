@@ -51,6 +51,11 @@ function showMore(id,x){
     }
 }
 
+function hide(id){
+  document.getElementById(id).classList.add('hidden');
+  document.getElementById(id+'readmore').classList.remove('hidden');
+}
+
 var slideIndex = 1;
 //showSlides(slideIndex,2);
 
