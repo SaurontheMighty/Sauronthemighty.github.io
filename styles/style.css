@@ -180,6 +180,11 @@ article{
     border-radius: 32px;
 }
 
+.borderappimg{
+    border: 5 px solid black;
+    border-radius: 32px;
+}
+
 .more{
     text-indent: 30px;
     line-height: 2;

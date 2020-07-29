@@ -94,7 +94,7 @@
       <p>My biggest project so far.</p>
       <p onclick="showMore('introspekt')" class="readmore" id="introspektreadmore">...</p>
       <article id='introspekt' class="hidden">
-        <span>I'm close to publishing it on the Play Store, I'll write about it then!</span>
+        <span>I'm close to publishing it on the Play Store, I'll write about it then! I've published a close beta test to close friends.</span>
       </article>
       <ul class="tags">
         <li onclick="liSearch('Flutter')">Flutter</li>
@@ -107,6 +107,7 @@
       </ul>
     </section>
     
+    <!-- Post -->
     <section class = "post htoo flutter dart google maps firestore firebase hackathon hack-a-thon h to o">
       <h4 onclick="showMore('htoo')">H to O</h4>
       <p>A project I built with some friends for a hackathon.</p>
@@ -125,6 +126,7 @@
       </ul>
     </section>
 
+    <!-- Post -->
     <section class = "post productivity ductivitypro javascript html css browser extension">
       <h4 onclick="showMore('ductivitypro',1)">ductivityPro</h4>
       <p>A browser extension for Chrome and Firefox.</p>
@@ -191,6 +193,7 @@
       </ul>
     </section>
 
+    <!-- Post -->
     <section class = "post pygame python adventure fireball">
       <h4 onclick="showMore('fireball',2)">Fireball</h4>
       <p>A game I made with the Python library pygame. I even drew the graphics for the game!</p>
@@ -232,6 +235,7 @@
       </ul>
     </section>
 
+    <!-- Post -->
     <section class = "post simpleems simple ems java gui">
       <h4 onclick="showMore('simpleems',3)">SimpleEMS</h4>
       <p>A GUI Java Employee Management application.</p>
@@ -241,19 +245,19 @@
         <div class="slideshow-container">
           <div class="mySlides slider3">
             <div style="text-align: center;">
-              <img src="images/ems1.png" class="slide-img" width="70%">
+              <img src="images/ems1.png" class="slide-img" width="70%" alt="Main Page">
             </div>
             <div class="caption-text">Main Page</div>
           </div>
           <div class="mySlides slider3">
             <div style="text-align: center;">
-              <img src="images/ems2.png" class="slide-img" width="40%">
+              <img src="images/ems2.png" class="slide-img" width="40%" alt="Add an Employee">
             </div>
             <div class="caption-text">Add an Employee</div>
           </div>
           <div class="mySlides slider3">
             <div style="text-align: center;">
-              <img src="images/ems3.png" class="slide-img" width="60%">
+              <img src="images/ems3.png" class="slide-img" width="60%" alt="Show all Employees">
             </div>
             <div class="caption-text">Show all the Employees</div>
           </div>
@@ -274,10 +278,86 @@
       </ul>
     </section>
 
+    <!-- Post -->
+    <section class = "post androidtimer android timer java">
+      <h4 onclick="showMore('androidtimer',4)">Android Timer App</h4>
+      <p>A native Android app.</p>
+      <p onclick="showMore('androidtimer',4)" class="readmore" id="androidtimerreadmore">...</p>
+      <article id='androidtimer' class="hidden">
+        <span class="more"><p id="more">I wanted to build a productivity app which could time me and store the total time I study each day. Currently the app has three modes: stopwatch, pomodoro and timer. As of now it doesn't store total time but that's something I plan on adding.</p><p id="more">I usually build tools that I need. My first productivity tool was called Ashish Life Solutions and it was a simple swift script that ran in the background and reminded me to take an eyebreak with a notification every 10 minutes. I built it because I couldn't find any free MacOS apps that simply reminded me to take an eyebreak every few minutes.</p><p id="more">The app has a modular design so that I can keep adding features as I get time.</p></span>
+        <div class="slideshow-container">
+          <div class="mySlides slider4">
+            <div style="text-align: center;">
+              <img src="images/anapp1.jpg" class="slide-img" width="38%" alt="Main Page">
+            </div>
+            <div class="caption-text">Main Page</div>
+          </div>
+          <div class="mySlides slider4">
+            <div style="text-align: center;">
+              <img src="images/anapp2.jpg" class="slide-img" width="38%" alt="Timer">
+            </div>
+            <div class="caption-text">Timer</div>
+          </div>
+          <a class="prev" onclick="plusSlides(-1,4)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1,4)">&#10095;</a>
+        </div>
+        <br>
+        <section style="text-align:center">
+          <span class="dot dot4" onclick="currentSlide(1,4)"></span> 
+          <span class="dot dot4" onclick="currentSlide(2,4)"></span> 
+        </section>
+        <p onclick="hide('androidtimer')" style="font-size: smaller;" class="readmore" id="androidtimerreadmore">show less</p>
+      </article>
+      <ul class="tags">
+        <li>Android</li>
+        <li>Java</li>
+        <li>Productivity</li>
+      </ul>
+    </section>
+
+    <!-- Post -->
+    <section class = "post ioslogin ios swift login firebase">
+      <h4 onclick="showMore('ioslogin',5)">UIKit iOS App</h4>
+      <p>A native iOS test app.</p>
+      <p onclick="showMore('ioslogin',5)" class="readmore" id="iosloginreadmore">...</p>
+      <article id='ioslogin' class="hidden">
+        <span class="more">I built this app so that I could learn how to integrate Firebase into apps and try my hand at building iOS apps.<p id="more">It can be used as a template but you need to add your own info.plist and if you're connecting it to Firebase, the Google Services plist.</p></span>
+        <div class="slideshow-container">
+          <div class="mySlides slider5">
+            <div style="text-align: center;">
+              <img src="images/app1.png" class="slide-img appimg" width="38%" alt="Signup Page">
+            </div>
+            <!-- <div class="caption-text">Login or Signup</div> -->
+          </div>
+          <div class="mySlides slider5">
+            <div style="text-align: center;">
+              <img src="images/app2.png" class="slide-img appimg" width="38%" alt="Login Page">
+            </div>
+            <!-- <div class="caption-text">Login</div> -->
+          </div>
+          <a class="prev" onclick="plusSlides(-1,5)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1,5)">&#10095;</a>
+        </div>
+        <br>
+        <section style="text-align:center">
+          <span class="dot dot5" onclick="currentSlide(1,5)"></span> 
+          <span class="dot dot5" onclick="currentSlide(2,5)"></span> 
+        </section>
+        <p onclick="hide('ioslogin')" style="font-size: smaller;" class="readmore" id="iosloginreadmore">show less</p>
+      </article>
+      <ul class="tags">
+        <li>iOS</li>
+        <li>Swift</li>
+        <li>Firebase</li>
+      </ul>
+    </section>
+  
     <button type="submit" class="back-button hidden" id="back-button" onclick="reset()">Back</button>
   </section>
 
-  <!--  -->
+    <button type="submit" class="back-button hidden" id="back-button" onclick="reset()">Back</button>
+  </section>
+  
   <!--  -->
   <!--  -->
   </main>
