@@ -1,5 +1,5 @@
 User-agent: Googlebot
-Disallow: /index4.html/
+Sitemap: /sitemap.txt
 
 User-agent: DuckDuckBot
-Disallow: /index4.html/
+Sitemap: /sitemap.txt
