@@ -302,12 +302,35 @@ body{
     background-color: #515151;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) and (min-width: 450px){
     main {   
       flex-direction: column;
     }
+    .appimg{
+        border-radius: 18px;
+    }
     .about-card{
         margin-bottom: 5px;
+    }
+    .search-card{
+        padding-left: 15px;
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    main {   
+      flex-direction: column;
+    }
+    .appimg{
+        border-radius: 18px;
+    }
+    .about-card{
+        margin-right: 0px;
+        margin-bottom: 5px;
+    }
+    .postpicapp{
+        height: 100px;
     }
     .search-card{
         padding-left: 15px;
