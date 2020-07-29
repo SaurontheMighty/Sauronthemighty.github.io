@@ -1,5 +1,5 @@
 User-agent: Googlebot
-Sitemap: /sitemap.txt
+Sitemap: https://sauronthemighty.github.io/sitemap.txt
 
 User-agent: DuckDuckBot
-Sitemap: /sitemap.txt
+Sitemap: https://sauronthemighty.github.io/sitemap.txt
