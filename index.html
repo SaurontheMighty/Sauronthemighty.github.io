@@ -4,8 +4,8 @@
 <title>Ashish Selvaraj</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Personal Projects">
-<meta name="keywords" content="Blog, Projects, Programming, SaurontheMighty, Github">
+<meta name="description" content="A blog on Ashish Selvaraj's Personal Projects spanning tech, coding and design. Read about the details and context of Introspekt, ductivityPRO, Fireball and more!">
+<meta name="keywords" content="Ashish Selvaraj, Blog, Projects, Programming, SaurontheMighty, Github">
 <meta name="google-site-verification" content="3QG3elGxUfK6DZlCsoab4UDn28J8Q27IqtfZax3m4SE" />
 <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -409,6 +409,50 @@
       <li>IMS</li>
     </ul>
   </section>
+
+  <!-- Post -->
+<section class = "post bobrun game">
+  <section class="postcol">
+      <article>
+          <h4 onclick="showMore('bobrun',6)">Bobrun</h4>
+          <p>A game I made with the Game Maker Language in the 7th grade.</p>
+          <p onclick="showMore('bobrun',6)" class="readmore" id="bobrunreadmore">...</p>
+      </article>
+      <section>
+          <p><img src="images/br3.png" class="postpicapp" alt="Post Thumbnail"></p>
+      </section>
+  </section>
+  <article id="bobrun" class="hidden">
+      <span class="more"><p id="more">It was my first big coding project and I made about 4-5 levels over 1-2 years. It was a really fun personal project but at some point the files got deleted and I could no longer work on it.</p></span>
+      <br>
+      <div class="slideshow-container">
+          <div class="mySlides slider6">
+              <div style="text-align: center;">
+                  <img src="images/br1.png" class="slide-img" width="80%">
+              </div>
+              <div class="caption-text">.</div>
+          </div>
+          <div class="mySlides slider6">
+              <div style="text-align: center;">
+                  <img src="images/br3.png" class="slide-img" width="80%">
+              </div>
+              <div class="caption-text">.</div>
+          </div>
+        <a class="prev" onclick="plusSlides(-1,6)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1,6)">&#10095;</a>
+      </div>
+      <br>
+      <section style="text-align:center">
+          <span class="dot dot6" onclick="currentSlide(1,6)"></span>
+          <span class="dot dot6" onclick="currentSlide(2,6)"></span>
+      </section>
+      <p onclick="hide('bobrun')" style="font-size: smaller;" class="readmore" id="bobrunreadmore">show less</p>
+  </article>
+  <ul class="tags">
+      <li>bobrun</li>
+      <li>game</li>
+  </ul>
+ </section>
   
     <button type="submit" class="back-button hidden" id="back-button" onclick="reset()">Back</button>
   </section>
