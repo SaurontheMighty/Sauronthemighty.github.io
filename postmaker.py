@@ -57,7 +57,6 @@ details = open("posts_no.txt","w")
 choice1=input("Does your post use a carousel? [y/n]")
 if(choice1.lower()=="y"):
     n = n+1
-    details.write(str(n))
     runnr = int(input("How many images does your post have?"))
 else:
     n=-1
@@ -65,7 +64,7 @@ else:
 
 for i in range(runnr):
     images.append(input("Enter image name: "))
-
+details.write(str(n))
 details.close()
 print("")
 
@@ -79,9 +78,9 @@ keywords=input("What are the keywords(eg. post ductivitypro browser extension ch
 post_lines.append('<section class = "'+keywords+'">')
 post_lines.append(' <section class="postcol">')
 post_lines.append('     <article>')
-post_lines.append('         <h4 onclick="showMore("'+post_name.lower()+'",'+str(n)+')">'+post_name+'</h4>')
+post_lines.append("         <h4 onclick='showMore("+'"'+post_name.lower()+'",'+str(n)+")'"+'>'+post_name+"</h4>")
 post_lines.append("         <p>"+post_description+"</p>")
-post_lines.append('         <p onclick="showMore("'+post_name.lower()+'",'+str(n)+')" class="readmore" id="'+post_name.lower()+'readmore">...</p>')
+post_lines.append("         <p onclick='showMore("+'"'+post_name.lower()+'",'+str(n)+")'"+' class="readmore" id="'+post_name.lower()+'readmore">...</p>')
 post_lines.append('     </article>')
 post_lines.append('     <section>')
 post_lines.append('         <p><img src="images/'+images[i]+'," class="postpicapp" alt="Post Thumbnail"></p>')
@@ -99,7 +98,6 @@ if(choice1.lower()=="y"):
         post_lines.append('             </div>')
         post_lines.append('             <div class="caption-text">'+input("Caption for "+str(i)+"th image: ")+'</div>')
         post_lines.append('         </div>')
-    post_lines.append('     </div>')
     post_lines.append('     <a class="prev" onclick="plusSlides(-1,'+str(n)+')">&#10094;</a>')
     post_lines.append('     <a class="next" onclick="plusSlides(1,'+str(n)+')">&#10095;</a>')
     post_lines.append('     </div>')
@@ -108,14 +106,14 @@ if(choice1.lower()=="y"):
     for i in range(len(images)):
         post_lines.append('         <span class="dot dot'+str(n)+'" onclick="currentSlide('+str(i+1)+','+str(n)+')"></span>')
     post_lines.append('     </section>')
-    post_lines.append('     <p onclick="hide("'+post_name.lower()+'")" style="font-size: smaller;" class="readmore" id="'+post_name.lower()+'readmore">show less</p>')
-    post_lines.append(' </article>')
-    post_lines.append(' <ul class="tags">')
-    tags=keywords.split(" ")
-    for i in range(1,len(tags)):
-        post_lines.append('     <li>'+tags[i]+'</li>')
-    post_lines.append(' </ul>')
-    post_lines.append('</section>')
+post_lines.append('     <p onclick="hide("'+post_name.lower()+'")" style="font-size: smaller;" class="readmore" id="'+post_name.lower()+'readmore">show less</p>')
+post_lines.append(' </article>')
+post_lines.append(' <ul class="tags">')
+tags=keywords.split(" ")
+for i in range(1,len(tags)):
+    post_lines.append('     <li>'+tags[i]+'</li>')
+post_lines.append(' </ul>')
+post_lines.append('</section>')
 
 print("")
 

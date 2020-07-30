@@ -82,7 +82,8 @@
 
     <!-- Search by Tags -->
     <section>
-      <input label="Search Posts" onkeydown="if (event.keyCode == 13) { document.getElementById(`search-button`).click(); return false; }" type="text" placeholder="Search by Title or Technology" class = "search-card" id="search-bar"><button aria-label="Search all the Posts on the Page" type="submit" class="search-button" id="search-button" onclick="searchButton()"><i class="fas fa-search"></i></button>
+      <input onkeydown="if (event.keyCode == 13) { document.getElementById(`search-button`).click(); return false; }" type="text" placeholder="Search by Title or Technology" class = "search-card" id="search-bar"><button aria-label="Search all the Posts on the Page" type="submit" class="search-button" id="search-button" onclick="searchButton()"><i class="fas fa-search"></i></button>
+      <label for="search-bar">Search posts by Title or Technology</label>
     </section>
     <section class = "about-card hidden" id="test">
       <p>Sorry, no posts were found!</p>
@@ -208,7 +209,7 @@
     </section>
 
     <!-- Post -->
-    <section class = "post pygame python adventure fireball">
+    <section class = "post pygame python adventure fireball game">
       <section class="postcol">
         <article>
           <h4 onclick="showMore('fireball',2)">Fireball</h4>
@@ -428,13 +429,13 @@
       <div class="slideshow-container">
           <div class="mySlides slider6">
               <div style="text-align: center;">
-                  <img src="images/br1.png" class="slide-img" width="80%">
+                  <img src="images/br1.png" class="slide-img" width="80%" alt="A picture of the game">
               </div>
               <div class="caption-text">.</div>
           </div>
           <div class="mySlides slider6">
               <div style="text-align: center;">
-                  <img src="images/br3.png" class="slide-img" width="80%">
+                  <img src="images/br3.png" class="slide-img" width="80%" alt="A picture of another level of the game">
               </div>
               <div class="caption-text">.</div>
           </div>
@@ -449,8 +450,8 @@
       <p onclick="hide('bobrun')" style="font-size: smaller;" class="readmore" id="bobrunreadmore">show less</p>
   </article>
   <ul class="tags">
-      <li>bobrun</li>
-      <li>game</li>
+      <li>Bobrun</li>
+      <li>Game</li>
   </ul>
  </section>
   
