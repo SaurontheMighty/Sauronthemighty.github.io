@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <title>Ashish Selvaraj</title>
 <meta charset="UTF-8">
@@ -83,7 +83,6 @@
     <!-- Search by Tags -->
     <section>
       <input onkeydown="if (event.keyCode == 13) { document.getElementById(`search-button`).click(); return false; }" type="text" placeholder="Search by Title or Technology" class = "search-card" id="search-bar"><button aria-label="Search all the Posts on the Page" type="submit" class="search-button" id="search-button" onclick="searchButton()"><i class="fas fa-search"></i></button>
-      <label for="search-bar">Search posts by Title or Technology</label>
     </section>
     <section class = "about-card hidden" id="test">
       <p>Sorry, no posts were found!</p>
@@ -91,11 +90,48 @@
 
     <!-- Posts -->
     <section class = "post introspekt flutter dart firebase firestore cloud functions admob in-app-messaging">
-      <h4 onclick="showMore('introspekt')">Introspekt</h4>
+      <h4 onclick="showMore('introspekt',7)">Introspekt</h4>
       <p>My biggest project so far.</p>
-      <p onclick="showMore('introspekt')" class="readmore" id="introspektreadmore">...</p>
+      <p onclick="showMore('introspekt',7)" class="readmore" id="introspektreadmore">...</p>
       <article id='introspekt' class="hidden">
-        <span>I'm close to publishing it on the Play Store, I'll write about it then! I've published a close beta test to close friends.</span>
+        <span class='more'><p id="more">I've been working on this project for about three months and I've learnt a lot in the process. Intropspekt is a journaling and happiness app built with the Flutter framework and the Dart language. The app was a complete project with a frontend and backend.</p>
+          <div class="slideshow-container">
+            <div class="mySlides slider7">
+              <div style="text-align: center;">
+                <img src="images/ipage1.png" class="slide-img" width="38%" alt="Calendar Page">
+              </div>
+              <div class="caption-text"></div>
+            </div>
+            <div class="mySlides slider7">
+              <div style="text-align: center;">
+                <img src="images/ipage2.png" class="slide-img" width="38%" alt="Goals Page">
+              </div>
+              <div class="caption-text"></div>
+            </div>
+            <div class="mySlides slider7">
+              <div style="text-align: center;">
+                <img src="images/ipage3.png" class="slide-img" width="38%" alt="Charts Page">
+              </div>
+              <div class="caption-text"></div>
+            </div>
+            <div class="mySlides slider7">
+              <div style="text-align: center;">
+                <img src="images/ipage4.png" class="slide-img" width="38%" alt="Settings Page">
+              </div>
+              <div class="caption-text"></div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1,7)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1,7)">&#10095;</a>
+          </div>
+          <br>
+          <section style="text-align:center">
+            <span class="dot dot7" onclick="currentSlide(1,7)"></span> 
+            <span class="dot dot7" onclick="currentSlide(2,7)"></span> 
+            <span class="dot dot7" onclick="currentSlide(3,7)"></span> 
+            <span class="dot dot7" onclick="currentSlide(4,7)"></span> 
+          </section>
+          <p id="more">Introspekt is an app where you can record how your day was and interesting thoughts about each day. The Charts tab shows you how your week, month or year was in a graph. It also tracks your goals and the frequency with which you want to work on them. I used Firebase Firestore as the database and implemented security rules and cloud functions to secure it. I also implemented AES encryption to encrypt the text before it left the user's device to ensure that even database admins couldn't see any user data. Overall this was a really interesting project and building a production app is a really great learning experience.</p><p id="more"><a id='more' href='https://play.google.com/store/apps/details?id=introspekt.app' target="_blank" rel="noopener">Get it on the Play Store!</a></p></span>
       </article>
       <ul class="tags">
         <li onclick="liSearch('Flutter')">Flutter</li>
