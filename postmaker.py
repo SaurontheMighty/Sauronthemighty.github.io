@@ -75,7 +75,7 @@ post_lines = ["<!-- Post -->"]
 print("")
 
 keywords=input("What are the keywords(eg. post ductivitypro browser extension chrome) for this post?")
-post_lines.append('<section class = "'+keywords+'">')
+post_lines.append('<section id="jump'+post_name+'" class = "'+keywords+'">')
 post_lines.append(' <section class="postcol">')
 post_lines.append('     <article>')
 post_lines.append("         <h4 onclick='showMore("+'"'+post_name.lower()+'",'+str(n)+")'"+'>'+post_name+"</h4>")
@@ -106,7 +106,7 @@ if(choice1.lower()=="y"):
     for i in range(len(images)):
         post_lines.append('         <span class="dot dot'+str(n)+'" onclick="currentSlide('+str(i+1)+','+str(n)+')"></span>')
     post_lines.append('     </section>')
-post_lines.append('     <p onclick="hide("'+post_name.lower()+'")" style="font-size: smaller;" class="readmore" id="'+post_name.lower()+'readmore">show less</p>')
+post_lines.append('     <p onclick="hide("'+post_name.lower()+'")" style="font-size: smaller;" class="readmore" id="'+post_name.lower()+'readmore"><a href="#jump'+post_name+'" style="color: black;">show less</a></p>')
 post_lines.append(' </article>')
 post_lines.append(' <ul class="tags">')
 tags=keywords.split(" ")

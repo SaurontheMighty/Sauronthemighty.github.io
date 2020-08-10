@@ -89,10 +89,17 @@
     </section>
 
     <!-- Posts -->
-    <section class = "post introspekt flutter dart firebase firestore cloud functions admob in-app-messaging">
-      <h4 onclick="showMore('introspekt',7)">Introspekt</h4>
-      <p>My biggest project so far.</p>
-      <p onclick="showMore('introspekt',7)" class="readmore" id="introspektreadmore">...</p>
+    <section id="jumpintrospekt" class = "post introspekt flutter dart firebase firestore cloud functions admob in-app-messaging">
+      <section class="postcol">
+        <article>
+          <h4 onclick="showMore('introspekt',7)">Intrsospekt</h4>
+          <p>My biggest project so far.</p>
+          <p onclick="showMore('introspekt',7)" class="readmore" id="introspektreadmore">...</p>
+        </article>
+        <section>
+          <p><img src='images/ipagex.png' class="postpicapp" alt="Post Thumbnail"></p>
+        </section> 
+      </section>
       <article id='introspekt' class="hidden">
         <span class='more'><p id="more">I've been working on this project for about three months and I've learnt a lot in the process. Intropspekt is a journaling and happiness app built with the Flutter framework and the Dart language. The app was a complete project with a frontend and backend.</p>
           <div class="slideshow-container">
@@ -132,7 +139,8 @@
             <span class="dot dot7" onclick="currentSlide(4,7)"></span> 
           </section>
           <p id="more">Introspekt is an app where you can record how your day was and interesting thoughts about each day. The Charts tab shows you how your week, month or year was in a graph. It also tracks your goals and the frequency with which you want to work on them. I used Firebase Firestore as the database and implemented security rules and cloud functions to secure it. I also implemented AES encryption to encrypt the text before it left the user's device to ensure that even database admins couldn't see any user data. Overall this was a really interesting project and building a production app is a really great learning experience.</p><p id="more"><a id='more' href='https://play.google.com/store/apps/details?id=introspekt.app' target="_blank" rel="noopener">Get it on the Play Store!</a></p></span>
-      </article>
+          <p onclick="hide('introspekt')" style="font-size: smaller;" class="readmore" id="introspektreadmore"><a href="#jumpintrospekt" style="color: black;">show less</a></p>
+        </article>
       <ul class="tags">
         <li onclick="liSearch('Flutter')">Flutter</li>
         <li onclick="liSearch('Dart')">Dart</li>
@@ -145,7 +153,7 @@
     </section>
     
     <!-- Post -->
-    <section class = "post htoo flutter dart google maps firestore firebase hackathon hack-a-thon h to o">
+    <section id="jumphtoo" class = "post htoo flutter dart google maps firestore firebase hackathon hack-a-thon h to o">
       <section class="postcol">
         <article>
           <h4 onclick="showMore('htoo')">H to O</h4>
@@ -153,12 +161,12 @@
           <p onclick="showMore('htoo')" class="readmore" id="htooreadmore">...</p>
         </article>
         <section>
-          <p><img src='images/flutter2.jpg' class="postpicapp" alt="Post Thumbnail"></p>
+          <p><img src='images/flutterx.jpg' class="postpicapp" alt="Post Thumbnail"></p>
         </section> 
       </section>
       <article id='htoo' class="hidden">
         <span class="more" markdown=1>So far I've attended 2 online hackathons organized by MLH and I've built Flutter projects for both!<br><p id='more'>The first project is called H to O and the main idea behind this was to create an app that would allow you to create a shopping list of the items you need and then show you the store that was closest to you and had the items you wanted. I used the Google Maps API to create the map and add the markers which showed each location. When you tap the description it takes you to a Google Maps page with the directions to the store. I also pulled data from our Firestore database and updated the maps accordingly. Any change in the inventory of the store can be quickly reflected in the map. This was a really fun project for me because I got to learn how to use the Google Maps API which I hadn't used before.</p><br><div class='align'><img class="appimg" width="30%" src='images/flutter2.jpg'></div><br><p id="more">The other project is called FoodConnect and it's designed to connect donors to the Foodbanks. The idea was that a donor could add the items they have and the app would connect them to a Foodbank that needed those items.</p></span>
-        <p onclick="hide('htoo')" style="font-size: smaller;" class="readmore" id="htooreadmore">show less</p>
+        <p onclick="hide('htoo')" style="font-size: smaller;" class="readmore" id="htooreadmore"><a href="#jumphtoo" style="color: black;">show less</a></p>
       </article>
       <ul class="tags">
         <li>Flutter</li>
@@ -171,7 +179,7 @@
     </section>
 
     <!-- Post -->
-    <section class = "post productivity ductivitypro javascript html css browser extension">
+    <section id="jumpductivitypro" class = "post productivity ductivitypro javascript html css browser extension">
       <section class="postcol">
         <article>
           <h4 onclick="showMore('ductivitypro',1)">ductivityPro</h4>
@@ -232,7 +240,7 @@
           <a id='more' href='https://chrome.google.com/webstore/detail/ductivitypro/ldmdmicajobgfjllgmmcifkmgpohkpji' target="_blank" rel="noopener">Check it out on the Chrome Web Store!</a><br><br><br>
           </div>
           <span>The full feature list is on GitHub and in the details on the installation page.</span>
-          <p onclick="hide('ductivitypro')" style="font-size: smaller;" class="readmore" id="ductivityproreadmore">show less</p>
+          <p onclick="hide('ductivitypro')" style="font-size: smaller;" class="readmore" id="ductivityproreadmore"><a href="#jumpductivitypro" style="color: black;">show less</a></p>
         </article>
       <ul class="tags">
         <li>Browser Extension</li>
@@ -245,7 +253,7 @@
     </section>
 
     <!-- Post -->
-    <section class = "post pygame python adventure fireball game">
+    <section id="jumpfireball" class = "post pygame python adventure fireball game">
       <section class="postcol">
         <article>
           <h4 onclick="showMore('fireball',2)">Fireball</h4>
@@ -284,7 +292,7 @@
           </section>
 
           <p id="more">I made this game using pygame the python library. I wanted to make a game that was 100% mine and even drew the art myself on piskelapp. Only the music files aren't mine, all sources are listed in the code. The highscore is stored in a seprate text file that the program writes to so that it remembers your high score. The game has two levels, with the second one being the bossfight. The boss fight has a moving enemy that shoots projectiles. The user can also attack the enemy when his charge gets restored.</p>
-          <p onclick="hide('fireball')" style="font-size: smaller;" class="readmore" id="fireballreadmore">show less</p>
+          <p onclick="hide('fireball')" style="font-size: smaller;" class="readmore" id="fireballreadmore"><a href="#jumpfireball" style="color: black;">show less</a></p>
         </article>
       <ul class="tags">
         <li>Python</li>
@@ -294,7 +302,7 @@
     </section>
 
     <!-- Post -->
-    <section class = "post simpleems simple ems java gui">
+    <section id="jumpsimple" class = "post simpleems simple ems java gui">
       <section class="postcol">
         <article>
           <h4 onclick="showMore('simpleems',3)">SimpleEMS</h4>
@@ -335,7 +343,7 @@
           <span class="dot dot3" onclick="currentSlide(2,3)"></span> 
           <span class="dot dot3" onclick="currentSlide(3,3)"></span> 
         </section>
-        <p onclick="hide('simpleems')" style="font-size: smaller;" class="readmore" id="simpleemsreadmore">show less</p>
+        <p onclick="hide('simpleems')" style="font-size: smaller;" class="readmore" id="simpleemsreadmore"><a href="#jumpsimple" style="color: black;">show less</a></p>
       </article>
       <ul class="tags">
         <li>Java</li>
@@ -344,7 +352,7 @@
     </section>
 
     <!-- Post -->
-    <section class = "post androidtimer android timer java">
+    <section id="jumpandroidtimer" class = "post androidtimer android timer java">
       <section class="postcol">
         <article>
           <h4 onclick="showMore('androidtimer',4)">Android Timer App</h4>
@@ -378,7 +386,7 @@
           <span class="dot dot4" onclick="currentSlide(1,4)"></span> 
           <span class="dot dot4" onclick="currentSlide(2,4)"></span> 
         </section>
-        <p onclick="hide('androidtimer')" style="font-size: smaller;" class="readmore" id="androidtimerreadmore">show less</p>
+        <p onclick="hide('androidtimer')" style="font-size: smaller;" class="readmore" id="androidtimerreadmore"><a href="#jumpandroidtimer" style="color: black;">show less</a></p>
       </article>
       <ul class="tags">
         <li>Android</li>
@@ -388,7 +396,7 @@
     </section>
 
     <!-- Post -->
-    <section class = "post ioslogin ios swift login firebase">
+    <section id="jumpiosfirebase" class = "post ioslogin ios swift login firebase">
       <section class="postcol">
         <article>
           <h4 onclick="showMore('ioslogin',5)">UIKit iOS App</h4>
@@ -422,7 +430,7 @@
           <span class="dot dot5" onclick="currentSlide(1,5)"></span> 
           <span class="dot dot5" onclick="currentSlide(2,5)"></span> 
         </section>
-        <p onclick="hide('ioslogin')" style="font-size: smaller;" class="readmore" id="iosloginreadmore">show less</p>
+        <p onclick="hide('ioslogin')" style="font-size: smaller;" class="readmore" id="iosloginreadmore"><a href="#jumpiosfirebase" style="color: black;">show less</a></p>
       </article>
       <ul class="tags">
         <li>iOS</li>
