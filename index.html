@@ -94,14 +94,14 @@
         <article>
           <h4 onclick="showMore('introspekt',7)">Intrsospekt</h4>
           <p>My biggest project so far.</p>
-          <p onclick="showMore('introspekt',7)" class="readmore" id="introspektreadmore">...</p>
+          <p onclick="showMore('introspekt',7)" class="readmore" id="introspektreadmore">Read</p>
         </article>
         <section>
           <p><img src='images/ipagex.png' class="postpicapp" alt="Post Thumbnail"></p>
         </section> 
       </section>
       <article id='introspekt' class="hidden">
-        <span class='more'><p id="more">I've been working on this project for about three months and I've learnt a lot in the process. Intropspekt is a journaling and happiness app built with the Flutter framework and the Dart language. The app was a complete project with a frontend and backend.</p>
+        <span class='more'><p id="more">I've been working on this project for about three months and I've learnt a lot in the process. Intropspekt is a journaling and happiness app built with the Flutter framework and the Dart language. The app was a complete project with the frontend in Flutter and the backend which was a Firestore database and some cloud functions.</p>
           <div class="slideshow-container">
             <div class="mySlides slider7">
               <div style="text-align: center;">
@@ -138,7 +138,7 @@
             <span class="dot dot7" onclick="currentSlide(3,7)"></span> 
             <span class="dot dot7" onclick="currentSlide(4,7)"></span> 
           </section>
-          <p id="more">Introspekt is an app where you can record how your day was and interesting thoughts about each day. The Charts tab shows you how your week, month or year was in a graph. It also tracks your goals and the frequency with which you want to work on them. I used Firebase Firestore as the database and implemented security rules and cloud functions to secure it. I also implemented AES encryption to encrypt the text before it left the user's device to ensure that even database admins couldn't see any user data. Overall this was a really interesting project and building a production app is a really great learning experience.</p><p id="more"><a id='more' href='https://play.google.com/store/apps/details?id=introspekt.app' target="_blank" rel="noopener">Get it on the Play Store!</a></p></span>
+          <p id="more">Introspekt is an app where you can record how your day was and interesting thoughts about each day. The Charts tab shows you how your week, month or year was in a graph. It also tracks your goals and the frequency with which you want to work on them. I used Firebase Firestore as the database and implemented security rules and cloud functions to secure it. I also implemented AES encryption to encrypt the text before it left the user's device to ensure that even database admins couldn't see any user data.</p><p id="more">There were several very interesting aspects to this project: the technical, the marketing and the strategy. When I started this project, I had never made an app and never used Flutter, over the course of building it I got pretty comfortable with the framework and with Dart. The most interesting part was probably the database. I wrote an algorithm to push user data to the cloud and pull data from it. I had to think about all the use cases, like if someone had some data already on device which was newer than the data in the cloud, the data from the cloud should not erase it and so on. I also had to account for what would happen if it failed midway because the internet blinked or someother reason and also incorporate options to delete all the user's data from the database for example if they no longer wanted to use the app. No matter how great a project, it's of little use unless people use it and so I set about marketing this project. My main avenue of marketing was Reddit, I posted about it on a few subreddits where I got a lot of positive feedback and a lot of people seemed interested in it. Now, the app has over 50 users which is pretty exciting for me. Overall this was a really interesting project and building a production app is a really great learning experience.</p><p id="more"><a id='more' href='https://play.google.com/store/apps/details?id=introspekt.app' target="_blank" rel="noopener">Get it on the Play Store!</a></p></span>
           <p onclick="hide('introspekt')" style="font-size: smaller;" class="readmore" id="introspektreadmore"><a href="#jumpintrospekt" style="color: black;">show less</a></p>
         </article>
       <ul class="tags">
@@ -158,7 +158,7 @@
         <article>
           <h4 onclick="showMore('htoo')">H to O</h4>
           <p>A project I built with some friends for a hackathon.</p>
-          <p onclick="showMore('htoo')" class="readmore" id="htooreadmore">...</p>
+          <p onclick="showMore('htoo')" class="readmore" id="htooreadmore">Read</p>
         </article>
         <section>
           <p><img src='images/flutterx.jpg' class="postpicapp" alt="Post Thumbnail"></p>
@@ -184,7 +184,7 @@
         <article>
           <h4 onclick="showMore('ductivitypro',1)">ductivityPro</h4>
           <p>A browser extension for Chrome and Firefox.</p>
-          <p onclick="showMore('ductivitypro',1)" class="readmore" id="ductivityproreadmore">...</p>
+          <p onclick="showMore('ductivitypro',1)" class="readmore" id="ductivityproreadmore">Read</p>
         </article>
         <section>
           <p><img src='images/dpext3.png' class="postpicapp" alt="Post Thumbnail"></p>
@@ -258,7 +258,7 @@
         <article>
           <h4 onclick="showMore('fireball',2)">Fireball</h4>
           <p>A game I made with the Python library pygame. I even drew the graphics for the game!</p>
-          <p onclick="showMore('fireball',2)" class="readmore" id="fireballreadmore">...</p>
+          <p onclick="showMore('fireball',2)" class="readmore" id="fireballreadmore">Read</p>
         </article>
         <section>
           <p><img src='images/pr1.png' class="postpicapp" alt="Post Thumbnail"></p>
@@ -307,7 +307,7 @@
         <article>
           <h4 onclick="showMore('simpleems',3)">SimpleEMS</h4>
           <p>A GUI Java Employee Management application.</p>
-          <p onclick="showMore('simpleems',3)" class="readmore" id="simpleemsreadmore">...</p>
+          <p onclick="showMore('simpleems',3)" class="readmore" id="simpleemsreadmore">Read</p>
         </article>
         <section>
           <p><img src='images/ems1.png' class="postpicapp" alt="Post Thumbnail"></p>
@@ -352,19 +352,44 @@
     </section>
 
     <!-- Post -->
+  <section id="jumpSaurontheMighty.github.io" class = "post website javascript css html">
+    <section class="postcol">
+        <article>
+            <h4 onclick='showMore("sauronthemighty.github.io",-1)'>SaurontheMighty.github.io</h4>
+            <p>The website you're looking at right now!</p>
+            <p onclick='showMore("sauronthemighty.github.io",-1)' class="readmore" id="sauronthemighty.github.ioreadmore">Read</p>
+        </article>
+        <section>
+            <p><img src="images/newdesign.png" class="postpicapp" alt="Post Thumbnail"></p>
+        </section>
+    </section>
+    <article id="sauronthemighty.github.io" class="hidden">
+        <span class="more"><p id="more">I decided to redesign my website and what you're looking at now is what I came up with. It's a huge improvement over the old website which used an external CSS library and was quite crowded. For this design I wrote the CSS myself so I can have it exactly the way I want and I don't have any external libraries so the page loads quickly. I also added a simple search bar which I wrote in JavaScript, which I think will make it easier to look through the website. For example if you want to see my Python projects you can just search for python rather than scrolling down and trying to find them individually.</p> <p>Another cool thing, is a Python script I wrote called postmaker.py (It's in the GitHub repository), which makes making posts pretty simple. It generates all the HTML syntax for me once I enter in the post name, description, etc. This post was generated with it. 😁</p></span>
+        <br>
+        <p onclick="hide('sauronthemighty.github.io')" style="font-size: smaller;" class="readmore" id="sauronthemighty.github.ioreadmore"><a href="#jumpSaurontheMighty.github.io" style="color: black;">show less</a></p>
+    </article>
+    <ul class="tags">
+        <li>Website</li>
+        <li>JavaScript</li>
+        <li>CSS</li>
+        <li>HTML</li>
+    </ul>
+  </section>
+
+    <!-- Post -->
     <section id="jumpandroidtimer" class = "post androidtimer android timer java">
       <section class="postcol">
         <article>
           <h4 onclick="showMore('androidtimer',4)">Android Timer App</h4>
           <p>A native Android app.</p>
-          <p onclick="showMore('androidtimer',4)" class="readmore" id="androidtimerreadmore">...</p>
+          <p onclick="showMore('androidtimer',4)" class="readmore" id="androidtimerreadmore">Read</p>
         </article>
         <section>
           <p><img src='images/anapp1.jpg' class="postpicapp" alt="Post Thumbnail"></p>
         </section>
       </section>
       <article id='androidtimer' class="hidden">
-        <span class="more"><p id="more">I wanted to build a productivity app which could time me and store the total time I study each day. Currently the app has three modes: stopwatch, pomodoro and timer. As of now it doesn't store total time but that's something I plan on adding.</p><p id="more">I usually build tools that I need. My first productivity tool was called Ashish Life Solutions and it was a simple swift script that ran in the background and reminded me to take an eyebreak with a notification every 10 minutes. I built it because I couldn't find any free MacOS apps that simply reminded me to take an eyebreak every few minutes.</p><p id="more">The app has a modular design so that I can keep adding features as I get time.</p></span>
+        <span class="more"><p id="more">I wanted to build a productivity app which could time me and store the total time I study each day. Currently the app has three modes: stopwatch, pomodoro and timer. As of now it doesn't store total time but that's something I plan on adding.</p><p id="more">I usually build tools that I need. My first productivity tool was called Ashish Life Solutions and it was a simple Apple script that ran in the background and reminded me to take an eyebreak with a notification every 10 minutes. I built it because I couldn't find any free MacOS apps that simply reminded me to take an eyebreak every few minutes.</p><p id="more">The app has a modular design so that I can keep adding features as I get time.</p></span>
         <div class="slideshow-container">
           <div class="mySlides slider4">
             <div style="text-align: center;">
@@ -401,7 +426,7 @@
         <article>
           <h4 onclick="showMore('ioslogin',5)">UIKit iOS App</h4>
           <p>A native iOS test app.</p>
-          <p onclick="showMore('ioslogin',5)" class="readmore" id="iosloginreadmore">...</p>
+          <p onclick="showMore('ioslogin',5)" class="readmore" id="iosloginreadmore">Read</p>
         </article>
         <section>
           <p><img src='images/app1.png' class="postpicapp" alt="Post Thumbnail"></p>
@@ -443,7 +468,7 @@
   <section class = "post ims python">
     <h4 onclick="showMore('ims')">Inventory Management System</h4>
     <p>A simple inventory management system in Python.</p>
-    <p onclick="showMore('ims')" class="readmore" id="imsreadmore">...</p>
+    <p onclick="showMore('ims')" class="readmore" id="imsreadmore">Read</p>
     <article id='ims' class="hidden">
       <span class="more"><p id="more">A simple Inventory Management System made with Python. This was initially made for my grade 11 computer science class. Although it was supposed to be a really simplistic system with functions to just add, edit and remove items I got carried away and added a lot of extra features. Additional features include a text file to store inventory, so that the changes made are stored. The program also has a shopping cart which stores the items the customer wants to purchase.</p></span>
       <br>
@@ -461,7 +486,7 @@
       <article>
           <h4 onclick="showMore('bobrun',6)">Bobrun</h4>
           <p>A game I made with the Game Maker Language in the 7th grade.</p>
-          <p onclick="showMore('bobrun',6)" class="readmore" id="bobrunreadmore">...</p>
+          <p onclick="showMore('bobrun',6)" class="readmore" id="bobrunreadmore">Read</p>
       </article>
       <section>
           <p><img src="images/br3.png" class="postpicapp" alt="Post Thumbnail"></p>
