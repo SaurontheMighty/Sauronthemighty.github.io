@@ -43,10 +43,10 @@
 }
 
 .small-tags li{
-    margin: auto;
+    margin-bottom: 3px;
     cursor: pointer;
     font-size: smaller;
-    display: inline;
+    display:inline-block;
     padding: 5px;
     border-radius: 15px;
     background-color: rgb(196, 105, 105);
