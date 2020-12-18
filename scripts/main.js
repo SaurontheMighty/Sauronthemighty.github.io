@@ -88,3 +88,14 @@ function showSlides(n,x) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active-dot";
 }
+
+function checkCompat() {
+    var agent = navigator.userAgent.toLowerCase();
+    if(agent.indexOf("safari")!=-1 && agent.indexOf("chrome")<=-1) {
+        var elements = document.getElementsByClassName("about-button");
+        for(i=0; i<elements.length; i++){
+            elements[i].style.backgroundColor="#fff7f2";
+        }
+    }
+}
+window.onload = checkCompat;
