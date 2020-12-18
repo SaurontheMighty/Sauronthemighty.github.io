@@ -317,6 +317,10 @@ body{
         padding-left: 15px;
         width: 75%;
     }
+    .shrink{
+        word-wrap: break-word;
+        width: 170px;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -337,4 +341,9 @@ body{
         padding-left: 15px;
         width: 75%;
     }
+    .shrink{
+        word-wrap: break-word;
+        width: 170px;
+    }
+    
 }
