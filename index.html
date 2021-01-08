@@ -12,7 +12,6 @@
 <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
 <link rel="manifest" href="favicon/site.webmanifest">
 <link rel="stylesheet" href="styles/style.css">
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 <script src="scripts/main.js"></script>
 <script type="application/ld+json">
   [{
@@ -83,7 +82,7 @@
 
     <!-- Search by Tags -->
     <section>
-      <input onkeydown="if (event.keyCode == 13) { document.getElementById(`search-button`).click(); return false; }" type="text" placeholder="Search by Title or Technology" class = "search-card" id="search-bar"><button aria-label="Search all the Posts on the Page" type="submit" class="search-button" id="search-button" onclick="searchButton()"><i class="fas fa-search"></i></button>
+      <input onkeydown="if (event.keyCode == 13) { document.getElementById(`search-button`).click(); return false; }" type="text" placeholder="Search by Title or Technology" class = "search-card" id="search-bar"><button aria-label="Search all the Posts on the Page" type="submit" class="search-button" id="search-button" onclick="searchButton()">&#128269;</button>
     </section>
     <section class = "about-card hidden" id="test">
       <p>Sorry, no posts were found!</p>
@@ -365,7 +364,7 @@
         </section>
     </section>
     <article id="sauronthemighty.github.io" class="hidden">
-        <span class="more"><p id="more">I decided to redesign my website and what you're looking at now is what I came up with. It's a huge improvement over the old website which used an external CSS library and was quite crowded. For this design I wrote the CSS myself so I can have it exactly the way I want and I don't have any external libraries so the page loads quickly. I also added a simple search bar which I wrote in JavaScript, which I think will make it easier to look through the website. For example if you want to see my Python projects you can just search for python rather than scrolling down and trying to find them individually.</p> <p>Another cool thing, is a Python script I wrote called postmaker.py (It's in the GitHub repository), which makes making posts pretty simple. It generates all the HTML syntax for me once I enter in the post name, description, etc. This post was generated with it. 😁</p></span>
+        <span class="more"><p id="more">I wanted to make a simple straightforward website to showcase my projects and this is what I came up with. Its also free of external dependancies (external stylesheets/scripts) so the page loads quickly. The page is also responsive and works well on mobile devices.</p> <p>Another cool thing, is a Python script I wrote called postmaker.py (It's in the GitHub repository), which makes making posts pretty simple. It generates all the HTML syntax for me once I enter in the post name, description, etc. This post was generated with it. Doing this with JavaScript would actually be a lot better and easier so I'll be doing that soon. The only reason I did it with Python is because it was really really fast to write in python. I've also been learning React and I might redo the website with React. 😁</p></span>
         <br>
         <p onclick="hide('sauronthemighty.github.io')" style="font-size: smaller;" class="readmore" id="sauronthemighty.github.ioreadmore"><a href="#jumpSaurontheMighty.github.io" style="color: black;">show less</a></p>
     </article>
