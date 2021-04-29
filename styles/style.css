@@ -29,19 +29,16 @@ main {
 /* Grid Details */
 .about-card {
     margin-left: 10px;
-    grid-column: 1 / 2;
     grid-area: about;
 }
 
 .aside {
     margin-left: 10px;
-    grid-column: 1 / 2;
     grid-area: aside;
 }
 
 .main-card {
     margin-right: 10px;
-    grid-column: 2 / 5;
     grid-area: main;
 }
 
@@ -130,6 +127,7 @@ main {
     padding: 10px;
     border: 1px solid #ececec;
     background: #ffff;
+    margin-bottom: 10px;
 }
 
 .search-card{
