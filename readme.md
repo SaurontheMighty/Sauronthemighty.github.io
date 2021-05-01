@@ -1,4 +1,13 @@
-## sauronthemighty.github.io
+## ashishselvaraj.com
+
+Hi, I'm Ashish!
+I have experience building websites and apps! 
+
+Website Built with:
+- React Library
+- JavaScript
+- HTML
+- CSS
 
 A personal blog and website with more details about the projects on my GitHub.
 
@@ -12,5 +21,3 @@ Projects I've written about:
 - UIKit iOS App
 - Inventory Management System
 - Bobrun
-
-I also wrote postmaker.py which writes post syntax for me!
