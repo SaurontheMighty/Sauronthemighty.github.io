@@ -318,9 +318,9 @@ footer {
       "main main main main"
       "aside aside aside aside";
   }
-  #sauron{
+  /* #sauron{
       content: url("images/newmobile.png");
-  }
+  } */
   footer {
       margin-top: 10px;
   }
