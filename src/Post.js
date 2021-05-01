@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { useMediaQuery } from 'react-responsive';
 
 const Post = ({post}) => {
 
+    const isMobile = useMediaQuery({ query: `(max-width: 760px)` });
     const [current, setCurrent] = useState(1);
     const [show, setShow] = useState(false);
 
@@ -9,6 +11,8 @@ const Post = ({post}) => {
     if((post.slideshow)) {
         len = (post.slideshow).length;
     }
+
+    const image = isMobile && post.uid === "this"? 'images/newmobile.png':post.thumbnail;
 
     return (
         <section className="post" key ={post.key}>
@@ -19,7 +23,7 @@ const Post = ({post}) => {
                     {!show && <p className="readmore" id={post.uid+"readmore"} onClick={() => setShow(true)}>Read</p>}
                 </article>
                 <section>
-                    <p><img src={post.thumbnail} className="postpicapp" alt="Post Thumbnail" /></p>
+                    <p><img src={image} className="postpicapp" alt="Post Thumbnail" /></p>
                 </section>
             </section>
             {show && <article id={post.uid}>

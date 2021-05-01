@@ -76,8 +76,32 @@ main {
   border-bottom: 1px solid #f1f1f1;
 }
 
+.search-tags{
+  margin-top: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 0px;
+  list-style: none;
+  font-size: smaller;
+  border-top: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.search-tags li{
+  margin-bottom: 3px;
+  margin-right: 3px;
+  cursor: pointer;
+  font-size: 12px;
+  display:inline-block;
+  padding: 5px 10px 5px 10px;
+  border-radius: 100px;
+  background-color: #ffd1ab;
+  color: #db6300;
+}
+
 .small-tags li{
   margin-bottom: 3px;
+  margin-right: 1.5px;
   cursor: pointer;
   font-size: smaller;
   display:inline-block;
@@ -318,9 +342,9 @@ footer {
       "main main main main"
       "aside aside aside aside";
   }
-  /* #sauron{
-      content: url("images/newmobile.png");
-  } */
+  .about-card, .aside {
+    margin-right: 10px;
+  }
   footer {
       margin-top: 10px;
   }
@@ -332,6 +356,9 @@ footer {
       "about about about about"
       "main main main main"
       "aside aside aside aside";
+  }
+  .about-card, .aside {
+    margin-right: 10px;
   }
   .overflow {
       width: 0%;
