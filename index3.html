@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Ashish Selvaraj</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="A blog on Ashish Selvaraj's Personal Projects spanning tech, coding and design. Read about the details and the story behind Introspekt, ductivityPRO, Fireball and more!">
+  <meta name="keywords" content="Ashish Selvaraj, Blog, Projects, Programming, SaurontheMighty, Github">
+  <meta name="google-site-verification" content="3QG3elGxUfK6DZlCsoab4UDn28J8Q27IqtfZax3m4SE" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="scripts/main.js"></script>
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Introspekt",
+    "operatingSystem": "ANDROID",
+    "applicationCategory": "LifestyleApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "0.00",
+      "priceCurrency": "USD"
+    },
+    "installUrl": "https://play.google.com/store/apps/details?id=introspekt.app"
+  },{
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "ductivityPRO",
+    "operatingSystem": "Chrome",
+    "applicationCategory": "BrowserApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "0.00",
+      "priceCurrency": "USD"
+    },
+    "installUrl": "https://chrome.google.com/webstore/detail/ductivitypro/ldmdmicajobgfjllgmmcifkmgpohkpji"
+  }]
+</script>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <h1>Ashish Selvaraj</h1>
+  </header>
+
+  <!-- Main Page Content Begins -->
+  <main>
+    <!-- About -->
+    <section class="about-card">
+      <p class="section-header">About Me</p>
+      <img src="images/avatar.png" class="avatar" alt="Avatar Image">
+      <section class="about-details">
+        <!-- <p class="div">Passionate about writing Software<br> and Building Projects.</p> -->
+        <p class="about-details-header">Passionate about writing Software<br> and Building Projects.</p>
+        <!-- <p>Python, Java, Math, Raspberry Pi, App Development</p> -->
+        <ul class="small-tags">
+          <li>Algorithms</li>
+          <li>Math</li>
+          <li>Python</li>
+          <li>Java</li>
+          <li>App Development</li>
+        </ul>
+        <p class="about-details-header">Favorite Books:</p>
+        <p class="div"><i class="fa fa-book"></i> Lord of the Rings, Harry Potter, Redwall</p>
+        <p class="about-details-header">Hobbies:</p>
+        <p class="div"><i class="fa fa-chess"></i> Chess, Guitar, Skateboarding, bicycling</p>
+      </section>
+      <section class="links">
+        <button class="about-button" onclick="window.open('https://github.com/SaurontheMighty/','_blank')"><img
+            class='abt-btn-img' src="images/githublogo.png" alt="GitHub Logo"></button>
+        <button class="about-button"
+          onclick="window.open('https://www.linkedin.com/in/ashish-selvaraj-639109196/','_blank')"><img
+            class='abt-btn-img' src="images/linkedinlogo.png" alt="LinkedIn Logo"></button>
+        <button class="about-button" onclick="window.open('https://devpost.com/yesashishs','_blank')"><img
+            class='abt-btn-img' src="images/hacklogo.png" alt="Hackathons"></button>
+      </section>
+    </section>
+
+    <!-- Main Content -->
+    <section class="main-card">
+      <p class="section-header">Posts</p>
+
+      <!-- Search by Tags -->
+      <section>
+        <input onkeydown="if (event.keyCode == 13) { document.getElementById(`search-button`).click(); return false; }"
+          type="text" placeholder="Search by Title or Technology" class="search-card" id="search-bar"><button
+          aria-label="Search all the Posts on the Page" type="submit" class="search-button" id="search-button"
+          onclick="searchButton()">&#128269;</button>
+      </section>
+      <section class="about-card hidden" id="test">
+        <p>Sorry, no posts were found!</p>
+      </section>
+
+      <!-- Posts -->
+      <section id="jumpintrospekt"
+        class="post introspekt flutter dart firebase firestore cloud functions admob in-app-messaging">
+        <section class="postcol">
+          <article>
+            <h4 onclick="showMore('introspekt',7)">Introspekt</h4>
+            <p>My biggest project so far.</p>
+            <p onclick="showMore('introspekt',7)" class="readmore" id="introspektreadmore">Read</p>
+          </article>
+          <section>
+            <p><img src='images/ipagex.png' class="postpicapp" alt="Post Thumbnail"></p>
+          </section>
+        </section>
+        <article id='introspekt' class="hidden">
+          <span class='more'>
+            <p id="more">I've been working on this project for about three months and I've learnt a lot in the process.
+              Intropspekt is a journaling and happiness app built with the Flutter framework and the Dart language. The
+              app was a complete project with the frontend in Flutter and the backend which was a Firestore database and
+              some cloud functions.</p>
+            <div class="slideshow-container">
+              <div class="mySlides slider7">
+                <div style="text-align: center;">
+                  <img src="images/ipage1.png" class="slide-img" width="38%" alt="Calendar Page">
+                </div>
+                <div class="caption-text"></div>
+              </div>
+              <div class="mySlides slider7">
+                <div style="text-align: center;">
+                  <img src="images/ipage2.png" class="slide-img" width="38%" alt="Goals Page">
+                </div>
+                <div class="caption-text"></div>
+              </div>
+              <div class="mySlides slider7">
+                <div style="text-align: center;">
+                  <img src="images/ipage3.png" class="slide-img" width="38%" alt="Charts Page">
+                </div>
+                <div class="caption-text"></div>
+              </div>
+              <div class="mySlides slider7">
+                <div style="text-align: center;">
+                  <img src="images/ipage4.png" class="slide-img" width="38%" alt="Settings Page">
+                </div>
+                <div class="caption-text"></div>
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1,7)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1,7)">&#10095;</a>
+            </div>
+            <br>
+            <section style="text-align:center">
+              <span class="dot dot7" onclick="currentSlide(1,7)"></span>
+              <span class="dot dot7" onclick="currentSlide(2,7)"></span>
+              <span class="dot dot7" onclick="currentSlide(3,7)"></span>
+              <span class="dot dot7" onclick="currentSlide(4,7)"></span>
+            </section>
+            <p id="more">Introspekt is an app where you can record how your day was and interesting thoughts about each
+              day. The Charts tab shows you how your week, month or year was in a graph. It also tracks your goals and
+              the frequency with which you want to work on them. I used Firebase Firestore as the database and
+              implemented security rules and cloud functions to secure it. I also implemented AES encryption to encrypt
+              the text before it left the user's device to ensure that even database admins couldn't see any user data.
+            </p>
+            <p id="more">There were several very interesting aspects to this project: the technical, the marketing and
+              the strategy. When I started this project, I had never made an app and never used Flutter, over the course
+              of building it I got pretty comfortable with the framework and with Dart. The most interesting part was
+              probably the database. I wrote an algorithm to push user data to the cloud and pull data from it. I had to
+              think about all the use cases, like if someone had some data already on device which was newer than the
+              data in the cloud, the data from the cloud should not erase it and so on. I also had to account for what
+              would happen if it failed midway because the internet blinked or someother reason and also incorporate
+              options to delete all the user's data from the database for example if they no longer wanted to use the
+              app. No matter how great a project, it's of little use unless people use it and so I set about marketing
+              this project. My main avenue of marketing was Reddit, I posted about it on a few subreddits where I got a
+              lot of positive feedback and a lot of people seemed interested in it. Now, the app has over 50 users which
+              is pretty exciting for me. Overall this was a really interesting project and building a production app is
+              a really great learning experience.</p>
+            <p id="more"><a id='more' href='https://play.google.com/store/apps/details?id=introspekt.app'
+                target="_blank" rel="noopener">Get it on the Play Store!</a></p>
+          </span>
+          <p onclick="hide('introspekt')" style="font-size: smaller;" class="readmore" id="introspektreadmore"><a
+              href="#jumpintrospekt" style="color: black;">show less</a></p>
+        </article>
+        <ul class="tags">
+          <li onclick="liSearch('Flutter')">Flutter</li>
+          <li onclick="liSearch('Dart')">Dart</li>
+          <li onclick="liSearch('Firebase')">Firebase</li>
+          <li onclick="liSearch('Firestore')">Firestore</li>
+          <li onclick="liSearch('Cloud Functions')">Cloud Functions</li>
+          <li onclick="liSearch('AdMob')">AdMob</li>
+          <li onclick="liSearch('in-app-messaging')">in-app-messaging</li>
+        </ul>
+      </section>
+
+      <!-- Post -->
+      <section id="jumphtoo" class="post htoo flutter dart google maps firestore firebase hackathon hack-a-thon h to o">
+        <section class="postcol">
+          <article>
+            <h4 onclick="showMore('htoo')">H to O</h4>
+            <p>A project I built with some friends for a hackathon.</p>
+            <p onclick="showMore('htoo')" class="readmore" id="htooreadmore">Read</p>
+          </article>
+          <section>
+            <p><img src='images/flutterx.jpg' class="postpicapp" alt="Post Thumbnail"></p>
+          </section>
+        </section>
+        <article id='htoo' class="hidden">
+          <span class="more" markdown=1>So far I've attended 2 online hackathons organized by MLH and I've built Flutter
+            projects for both!<br>
+            <p id='more'>The first project is called H to O and the main idea behind this was to create an app that
+              would allow you to create a shopping list of the items you need and then show you the store that was
+              closest to you and had the items you wanted. I used the Google Maps API to create the map and add the
+              markers which showed each location. When you tap the description it takes you to a Google Maps page with
+              the directions to the store. I also pulled data from our Firestore database and updated the maps
+              accordingly. Any change in the inventory of the store can be quickly reflected in the map. This was a
+              really fun project for me because I got to learn how to use the Google Maps API which I hadn't used
+              before.</p><br>
+            <div class='align'><img class="appimg" width="30%" src='images/flutter2.jpg'></div><br>
+            <p id="more">The other project is called FoodConnect and it's designed to connect donors to the Foodbanks.
+              The idea was that a donor could add the items they have and the app would connect them to a Foodbank that
+              needed those items.</p>
+          </span>
+          <p onclick="hide('htoo')" style="font-size: smaller;" class="readmore" id="htooreadmore"><a href="#jumphtoo"
+              style="color: black;">show less</a></p>
+        </article>
+        <ul class="tags">
+          <li>Flutter</li>
+          <li>Dart</li>
+          <li>Google Maps</li>
+          <li>Firebase</li>
+          <li>Firestore</li>
+          <li>Hackathon</li>
+        </ul>
+      </section>
+
+      <!-- Post -->
+      <section id="jumpductivitypro" class="post productivity ductivitypro javascript html css browser extension">
+        <section class="postcol">
+          <article>
+            <h4 onclick="showMore('ductivitypro',1)">ductivityPro</h4>
+            <p>A browser extension for Chrome and Firefox.</p>
+            <p onclick="showMore('ductivitypro',1)" class="readmore" id="ductivityproreadmore">Read</p>
+          </article>
+          <section>
+            <p><img src='images/dpext3.png' id="productivity" class="postpicapp overflow" alt="Post Thumbnail"></p>
+          </section>
+        </section>
+        <article id='ductivitypro' class="hidden">
+          <span class="more">
+            <p id='more'>With the pandemic, most of us are home and I thought this would be the perfect time to build a
+              productivity extension. With recommendation algorithms getting better and better its often really easy to
+              spend far more time on website than you wanted to, this is what inspired me to build
+              ductivityPRO(pro-ductivity).</p>
+            <p id='more'>Once you install the extension, you'll notice its icon in the toolbar. Clicking this opens up
+              its popup where you can set the amount of time that you want to be on that page. Once this time is over,
+              the extension notifies you and tilts the page preventing you from spending any more time on it. The amount
+              of tilt and the width of the border is fully customizable (both can be set to zero) and can be set from
+              the preferences menu. This can be accessed by clicking the settings icon on the top right hand corner of
+              the popup. Once a timer is set, you can click on the toolbar icon to check how much time is left.<br></p>
+          </span>
+          <br>
+          <div class="slideshow-container">
+            <div class="mySlides slider1">
+              <div style="text-align: center;">
+                <img src="images/dpext1.png" class="slide-img" width="80%">
+              </div>
+              <div class="caption-text">Set a Timer</div>
+            </div>
+            <div class="mySlides slider1">
+              <div style="text-align: center;">
+                <img src="images/dpext2.png" class="slide-img" width="80%">
+              </div>
+              <div class="caption-text">Timer in Progress</div>
+            </div>
+            <div class="mySlides slider1">
+              <div style="text-align: center;">
+                <img src="images/dpext3.png" class="slide-img" width="80%">
+              </div>
+              <div class="caption-text">Timer has Rung</div>
+            </div>
+            <div class="mySlides slider1">
+              <div style="text-align: center;">
+                <img src="images/dpext4.png" class="slide-img" width="80%">
+              </div>
+              <div class="caption-text">Settings</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1,1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1,1)">&#10095;</a>
+          </div>
+          <br>
+          <section style="text-align:center">
+            <span class="dot dot1" onclick="currentSlide(1,1)"></span>
+            <span class="dot dot1" onclick="currentSlide(2,1)"></span>
+            <span class="dot dot1" onclick="currentSlide(3,1)"></span>
+            <span class="dot dot1" onclick="currentSlide(4,1)"></span>
+          </section>
+          <br>
+          <p id='more'>Another feature is "disable polymer" which can be enabled from the options menu. With YouTube's
+            (relatively) new polymer design, you can't go back into full screen mode once the alarm rings. Once you
+            enable this feature, the extension reverts YouTube to it's old design whenever it detects that you're
+            watching a video. But if you're using this to curb your binge watching addiction you may want to leave
+            YouTube as is.</p>
+          <p id='more'>In order to put it on addons.mozilla.org, I had to choose a license. This was a really good
+            learning experience because I learned about all the open source licenses and the pros and cons of each one.
+            This is the important but less exciting part of building projects.</p>
+          <p id='more'>I built a version for Google Chrome as well as Firefox. It was a really interesting process to
+            learn how each platform differed. The current source code on Github has all the features and will work for
+            both platforms.</p>
+          <div class="align">
+            <a id='more' href="https://addons.mozilla.org/en-US/firefox/addon/ductivitypro/" target="_blank"
+              rel="noopener">Check it out on the Firefox store!</a><br>
+          </div>
+          <div class="align"><br>
+            <a id='more' href='https://chrome.google.com/webstore/detail/ductivitypro/ldmdmicajobgfjllgmmcifkmgpohkpji'
+              target="_blank" rel="noopener">Check it out on the Chrome Web Store!</a><br><br><br>
+          </div>
+          <span>The full feature list is on GitHub and in the details on the installation page.</span>
+          <p onclick="hide('ductivitypro')" style="font-size: smaller;" class="readmore" id="ductivityproreadmore"><a
+              href="#jumpductivitypro" style="color: black;">show less</a></p>
+        </article>
+        <ul class="tags">
+          <li>Browser Extension</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Chrome</li>
+          <li>Firefox</li>
+        </ul>
+      </section>
+
+      <!-- Post -->
+      <section id="jumpfireball" class="post pygame python adventure fireball game">
+        <section class="postcol">
+          <article>
+            <h4 onclick="showMore('fireball',2)">Fireball</h4>
+            <p>A game I made with the Python library pygame. I even drew the graphics for the game!</p>
+            <p onclick="showMore('fireball',2)" class="readmore" id="fireballreadmore">Read</p>
+          </article>
+          <section>
+            <p><img src='images/pr1.png' class="postpicapp overflow" alt="Post Thumbnail"></p>
+          </section>
+        </section>
+        <article id='fireball' class="hidden">
+          <span class="more">
+            <p id="more">This project is one of my favorites and one that I had a lot of fun making. Its an obstacle
+              avoidace game but instead of going on infinitely like the others it has a BOSS FIGHT and an ending!
+          </span>
+          <br>
+          <div class="slideshow-container">
+            <div class="mySlides slider2">
+              <div style="text-align: center;">
+                <img src="images/pr2.png" class="slide-img" width="80%">
+              </div>
+              <div class="caption-text">Level 1</div>
+            </div>
+            <div class="mySlides slider2">
+              <div style="text-align: center;">
+                <img src="images/pr1.png" class="slide-img" width="80%">
+              </div>
+              <div class="caption-text">Level 2</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1,2)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1,2)">&#10095;</a>
+          </div>
+          <br>
+          <section style="text-align:center">
+            <span class="dot dot2" onclick="currentSlide(1,2)"></span>
+            <span class="dot dot2" onclick="currentSlide(2,2)"></span>
+          </section>
+
+          <p id="more">I made this game using pygame the python library. I wanted to make a game that was 100% mine and
+            even drew the art myself on piskelapp. Only the music files aren't mine, all sources are listed in the code.
+            The highscore is stored in a seprate text file that the program writes to so that it remembers your high
+            score. The game has two levels, with the second one being the bossfight. The boss fight has a moving enemy
+            that shoots projectiles. The user can also attack the enemy when his charge gets restored.</p>
+          <p onclick="hide('fireball')" style="font-size: smaller;" class="readmore" id="fireballreadmore"><a
+              href="#jumpfireball" style="color: black;">show less</a></p>
+        </article>
+        <ul class="tags">
+          <li>Python</li>
+          <li>Pygame</li>
+          <li>Game</li>
+        </ul>
+      </section>
+
+      <!-- Post -->
+      <section id="jumpsimple" class="post simpleems simple ems java gui">
+        <section class="postcol">
+          <article>
+            <h4 onclick="showMore('simpleems',3)">SimpleEMS</h4>
+            <p>A GUI Java Employee Management application.</p>
+            <p onclick="showMore('simpleems',3)" class="readmore" id="simpleemsreadmore">Read</p>
+          </article>
+          <section>
+            <p><img src='images/ems1.png' class="postpicapp overflow" alt="Post Thumbnail"></p>
+          </section>
+        </section>
+        <article id='simpleems' class="hidden">
+          <span class="more">
+            <p id="more">I have also been building an "Employee Management System" as a school assignment. It's a Swing
+              GUI application written in Java on Netbeans. It is designed as Enterprise software and has functions to
+              add employees, edit employee information, see all employees and remove employees. All the information is
+              stored locally, I am looking into ways to encrypt this information.</p>
+          </span>
+          <div class="slideshow-container">
+            <div class="mySlides slider3">
+              <div style="text-align: center;">
+                <img src="images/ems1.png" class="slide-img" width="70%" alt="Main Page">
+              </div>
+              <div class="caption-text">Main Page</div>
+            </div>
+            <div class="mySlides slider3">
+              <div style="text-align: center;">
+                <img src="images/ems2.png" class="slide-img" width="40%" alt="Add an Employee">
+              </div>
+              <div class="caption-text">Add an Employee</div>
+            </div>
+            <div class="mySlides slider3">
+              <div style="text-align: center;">
+                <img src="images/ems3.png" class="slide-img" width="60%" alt="Show all Employees">
+              </div>
+              <div class="caption-text">Show all the Employees</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1,3)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1,3)">&#10095;</a>
+          </div>
+          <br>
+          <section style="text-align:center">
+            <span class="dot dot3" onclick="currentSlide(1,3)"></span>
+            <span class="dot dot3" onclick="currentSlide(2,3)"></span>
+            <span class="dot dot3" onclick="currentSlide(3,3)"></span>
+          </section>
+          <p onclick="hide('simpleems')" style="font-size: smaller;" class="readmore" id="simpleemsreadmore"><a
+              href="#jumpsimple" style="color: black;">show less</a></p>
+        </article>
+        <ul class="tags">
+          <li>Java</li>
+          <li>GUI</li>
+        </ul>
+      </section>
+
+      <!-- Post -->
+      <section id="jumpSaurontheMighty.github.io" class="post website javascript css html">
+        <section class="postcol">
+          <article class="shrink">
+            <h4 onclick='showMore("sauronthemighty.github.io",-1)'>SaurontheMighty.github.io</h4>
+            <p>The website you're looking at right now!</p>
+            <p onclick='showMore("sauronthemighty.github.io",-1)' class="readmore"
+              id="sauronthemighty.github.ioreadmore">Read</p>
+          </article>
+          <section>
+            <p><img src="images/newdesign.png" class="postpicapp overflow" id="sauron" alt="Post Thumbnail"></p>
+          </section>
+        </section>
+        <article id="sauronthemighty.github.io" class="hidden">
+          <span class="more">
+            <p id="more">I wanted to make a simple straightforward website to showcase my projects and this is what I
+              came up with. Its also free of external dependancies (external stylesheets/scripts) so the page loads
+              quickly. The page is also responsive and works well on mobile devices.</p>
+            <p>Another cool thing, is a Python script I wrote called postmaker.py (It's in the GitHub repository), which
+              makes making posts pretty simple. It generates all the HTML syntax for me once I enter in the post name,
+              description, etc. This post was generated with it. Doing this with JavaScript would actually be a lot
+              better and easier so I'll be doing that soon. The only reason I did it with Python is because it was
+              really really fast to write in python. I've also been learning React and I might redo the website with
+              React. 😁</p>
+          </span>
+          <br>
+          <p onclick="hide('sauronthemighty.github.io')" style="font-size: smaller;" class="readmore"
+            id="sauronthemighty.github.ioreadmore"><a href="#jumpSaurontheMighty.github.io" style="color: black;">show
+              less</a></p>
+        </article>
+        <ul class="tags">
+          <li>Website</li>
+          <li>JavaScript</li>
+          <li>CSS</li>
+          <li>HTML</li>
+        </ul>
+      </section>
+
+      <!-- Post -->
+      <section id="jumpandroidtimer" class="post androidtimer android timer java">
+        <section class="postcol">
+          <article>
+            <h4 onclick="showMore('androidtimer',4)">Android Timer App</h4>
+            <p>A native Android app.</p>
+            <p onclick="showMore('androidtimer',4)" class="readmore" id="androidtimerreadmore">Read</p>
+          </article>
+          <section>
+            <p><img src='images/anapp1.jpg' class="postpicapp" alt="Post Thumbnail"></p>
+          </section>
+        </section>
+        <article id='androidtimer' class="hidden">
+          <span class="more">
+            <p id="more">I wanted to build a productivity app which could time me and store the total time I study each
+              day. Currently the app has three modes: stopwatch, pomodoro and timer. As of now it doesn't store total
+              time but that's something I plan on adding.</p>
+            <p id="more">I usually build tools that I need. My first productivity tool was called Ashish Life Solutions
+              and it was a simple Apple script that ran in the background and reminded me to take an eyebreak with a
+              notification every 10 minutes. I built it because I couldn't find any free MacOS apps that simply reminded
+              me to take an eyebreak every few minutes.</p>
+            <p id="more">The app has a modular design so that I can keep adding features as I get time.</p>
+          </span>
+          <div class="slideshow-container">
+            <div class="mySlides slider4">
+              <div style="text-align: center;">
+                <img src="images/anapp1.jpg" class="slide-img" width="38%" alt="Main Page">
+              </div>
+              <div class="caption-text">Main Page</div>
+            </div>
+            <div class="mySlides slider4">
+              <div style="text-align: center;">
+                <img src="images/anapp2.jpg" class="slide-img" width="38%" alt="Timer">
+              </div>
+              <div class="caption-text">Timer</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1,4)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1,4)">&#10095;</a>
+          </div>
+          <br>
+          <section style="text-align:center">
+            <span class="dot dot4" onclick="currentSlide(1,4)"></span>
+            <span class="dot dot4" onclick="currentSlide(2,4)"></span>
+          </section>
+          <p onclick="hide('androidtimer')" style="font-size: smaller;" class="readmore" id="androidtimerreadmore"><a
+              href="#jumpandroidtimer" style="color: black;">show less</a></p>
+        </article>
+        <ul class="tags">
+          <li>Android</li>
+          <li>Java</li>
+          <li>Productivity</li>
+        </ul>
+      </section>
+
+      <!-- Post -->
+      <section id="jumpiosfirebase" class="post ioslogin ios swift login firebase">
+        <section class="postcol">
+          <article>
+            <h4 onclick="showMore('ioslogin',5)">UIKit iOS App</h4>
+            <p>A native iOS test app.</p>
+            <p onclick="showMore('ioslogin',5)" class="readmore" id="iosloginreadmore">Read</p>
+          </article>
+          <section>
+            <p><img src='images/app1.png' class="postpicapp" alt="Post Thumbnail"></p>
+          </section>
+        </section>
+        <article id='ioslogin' class="hidden">
+          <span class="more">I built this app so that I could learn how to integrate Firebase into apps and try my hand
+            at building iOS apps.<p id="more">It can be used as a template but you need to add your own info.plist and
+              if you're connecting it to Firebase, the Google Services plist.</p></span>
+          <div class="slideshow-container">
+            <div class="mySlides slider5">
+              <div style="text-align: center;">
+                <img src="images/app1.png" class="slide-img appimg" width="38%" alt="Signup Page">
+              </div>
+              <!-- <div class="caption-text">Login or Signup</div> -->
+            </div>
+            <div class="mySlides slider5">
+              <div style="text-align: center;">
+                <img src="images/app2.png" class="slide-img appimg" width="38%" alt="Login Page">
+              </div>
+              <!-- <div class="caption-text">Login</div> -->
+            </div>
+            <a class="prev" onclick="plusSlides(-1,5)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1,5)">&#10095;</a>
+          </div>
+          <br>
+          <section style="text-align:center">
+            <span class="dot dot5" onclick="currentSlide(1,5)"></span>
+            <span class="dot dot5" onclick="currentSlide(2,5)"></span>
+          </section>
+          <p onclick="hide('ioslogin')" style="font-size: smaller;" class="readmore" id="iosloginreadmore"><a
+              href="#jumpiosfirebase" style="color: black;">show less</a></p>
+        </article>
+        <ul class="tags">
+          <li>iOS</li>
+          <li>Swift</li>
+          <li>Firebase</li>
+        </ul>
+      </section>
+
+      <!-- Post -->
+      <section class="post ims python">
+        <h4 onclick="showMore('ims')">Inventory Management System</h4>
+        <p>A simple inventory management system in Python.</p>
+        <p onclick="showMore('ims')" class="readmore" id="imsreadmore">Read</p>
+        <article id='ims' class="hidden">
+          <span class="more">
+            <p id="more">A simple Inventory Management System made with Python. This was initially made for my grade 11
+              computer science class. Although it was supposed to be a really simplistic system with functions to just
+              add, edit and remove items I got carried away and added a lot of extra features. Additional features
+              include a text file to store inventory, so that the changes made are stored. The program also has a
+              shopping cart which stores the items the customer wants to purchase.</p>
+          </span>
+          <br>
+          <p onclick="hide('ims')" style="font-size: smaller;" class="readmore" id="imsreadmore">show less</p>
+        </article>
+        <ul class="tags">
+          <li>Python</li>
+          <li>IMS</li>
+        </ul>
+      </section>
+
+      <!-- Post -->
+      <section class="post bobrun game">
+        <section class="postcol">
+          <article>
+            <h4 onclick="showMore('bobrun',6)">Bobrun</h4>
+            <p>A game I made with the Game Maker Language in the 7th grade.</p>
+            <p onclick="showMore('bobrun',6)" class="readmore" id="bobrunreadmore">Read</p>
+          </article>
+          <section>
+            <p><img src="images/brex.png" class="postpicapp overflow" alt="Post Thumbnail"></p>
+          </section>
+        </section>
+        <article id="bobrun" class="hidden">
+          <span class="more">
+            <p id="more">It was my first big coding project and I made about 4-5 levels over 1-2 years. It was a really
+              fun personal project but at some point the files got deleted and I could no longer work on it.</p>
+          </span>
+          <br>
+          <div class="slideshow-container">
+            <div class="mySlides slider6">
+              <div style="text-align: center;">
+                <img src="images/br1.png" class="slide-img" width="80%" alt="A picture of the game">
+              </div>
+              <div class="caption-text">.</div>
+            </div>
+            <div class="mySlides slider6">
+              <div style="text-align: center;">
+                <img src="images/br3.png" class="slide-img" width="80%" alt="A picture of another level of the game">
+              </div>
+              <div class="caption-text">.</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1,6)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1,6)">&#10095;</a>
+          </div>
+          <br>
+          <section style="text-align:center">
+            <span class="dot dot6" onclick="currentSlide(1,6)"></span>
+            <span class="dot dot6" onclick="currentSlide(2,6)"></span>
+          </section>
+          <p onclick="hide('bobrun')" style="font-size: smaller;" class="readmore" id="bobrunreadmore">show less</p>
+        </article>
+        <ul class="tags">
+          <li>Bobrun</li>
+          <li>Game</li>
+        </ul>
+      </section>
+
+      <button type="submit" class="back-button hidden" id="back-button" onclick="reset()">Back</button>
+    </section>
+
+    <!-- Aside -->
+    <!-- Add content if necessary -->
+    <section class="aside">
+      <div>
+        <p>University of Waterloo</p>
+        <p>Computer Science & Business Double Degree</p>
+        <p>Graduation: August 2025</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Made with HTML, CSS and JavaScript by Ashish.</p>
+  </footer>
+</body>
+
+</html>

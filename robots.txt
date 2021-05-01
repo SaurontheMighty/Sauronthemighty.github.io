@@ -1,5 +1,2 @@
-User-agent: Googlebot
-Disallow: /index4.html/
-
-User-agent: DuckDuckBot
-Disallow: /index4.html/
+User-agent: *
+Disallow: /index3.html
