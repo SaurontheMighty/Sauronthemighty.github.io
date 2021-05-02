@@ -182,5 +182,29 @@ module.exports = [
         "links": null,
         "tags": ["App", 'Android', 'Java'],
         "id": 7
+    },
+    {
+        "title": "UIKit iOS Template",
+        "uid": "uikit",
+        "thumbnail": 'images/app1.png',
+        "body1": null,
+        "description": 'An iOS app with Login/Signup connected to Firebase.',
+        "body2": "I built this app so that I could learn how to integrate Firebase into apps and try my hand at building iOS apps. This is most useful as a quick template so that you don't waste any time on login/signup since the basis of that is always the same. You can add your own styles or customization as needed. Do note that you need to add your own info.plist and if you're connecting it to Firebase, the Google Services plist.",
+        "slideshow": [
+            {
+                image: "app1.png",
+                caption: "Sign Up",
+                key: 1
+            },
+            {
+                image: "app2.png",
+                caption: "Login",
+                key: 2
+            }
+        ],
+        "author": "Ashish Selvaraj",
+        "links": null,
+        "tags": ["App", 'iOS', 'Swift', 'UIKit'],
+        "id": 8
     }
 ];

@@ -24,6 +24,9 @@ const Main = () => {
                 (post.tags).map((tag) => {
                     if(tag.toLowerCase().includes(search.toLowerCase())){
                         flag = 1;
+                    }
+                    if(search.toLowerCase().includes(tag.toLowerCase())){
+                        flag = 1;
                     };
                 })
                 if(flag === 1){
@@ -66,8 +69,8 @@ const Main = () => {
             </section>
             <section className="search-tags">
                 <li onClick={(e) => setSearch("website")}>Websites</li>
-                <li onClick={(e) => setSearch("app")}>iOS</li>
-                <li onClick={(e) => setSearch("app")}>Android</li>
+                <li onClick={(e) => setSearch("ios app")}>iOS</li>
+                <li onClick={(e) => setSearch("android app")}>Android</li>
                 <li onClick={(e) => setSearch("extension")}>Browser Extensions</li>
                 <li onClick={(e) => setSearch("React")}>React</li>
                 <li onClick={(e) => setSearch("Node.js")}>Node.js</li>
@@ -76,15 +79,15 @@ const Main = () => {
                 <li onClick={(e) => setSearch("Java")}>Java</li>
                 <li onClick={(e) => setSearch("Cloud")}>Cloud</li>
             </section>
+            <br />
             {noPost && 
             <div>
-                <br />
                 <section className="about-card" id="test">
                     <p>Sorry, no posts were found!</p>
                 </section>
             </div>}
             {posts.map((post) => (
-                <Post post={post} />
+                <Post post={post} setSearch = {setSearch} />
             ))}
             {back && <button type="submit" className="back-button" id="back-button" onClick={() => {
                 setBack(false);

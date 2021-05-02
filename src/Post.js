@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useMediaQuery } from 'react-responsive';
 
-const Post = ({post}) => {
+const Post = ({post, setSearch}) => {
 
     const isMobile = useMediaQuery({ query: `(max-width: 760px)` });
     const [current, setCurrent] = useState(1);
@@ -43,10 +43,16 @@ const Post = ({post}) => {
                         <a className="prev" onClick={() => {
                             if(current != 1){
                                 setCurrent(current - 1);
+                            }
+                            else{
+                                setCurrent(len);
                             }}}>&#10094;</a>
                         <a className="next" onClick={() => {
                             if(current != len){
                                 setCurrent(current + 1);
+                            }
+                            else{
+                                setCurrent(1);
                             }
                         }}>&#10095;</a>
                         <section style={{textAlign:"center"}}>
@@ -63,7 +69,7 @@ const Post = ({post}) => {
             </article> }
             <ul className="tags">
                 {(post.tags).map((tag) =>(
-                    <li>{tag}</li>
+                    <li onClick={() => setSearch(tag)}>{tag}</li>
                 ))}
             </ul>
         </section>

@@ -220,11 +220,12 @@ main {
   cursor: pointer;
   font-size: small;
   display: inline-flex;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
   padding-top: 5px;
   padding-bottom: 5px;
-  border-radius: 12px;
+  border-radius: 20px;
+  margin-right: 5px;
   border: 1px solid #f1f1f1;
   color: #818181;
 }
@@ -365,5 +366,24 @@ footer {
   }
   footer {
       margin-top: 10px;
+  }
+}
+
+/* Dark Theme */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: rgb(26, 26, 26);
+  }
+  p, h4, h1, li {
+    color: white;
+  }
+  header, footer {
+    background-color: rgb(36, 36, 36);
+  }
+  .post, .aside, .about-card, .main-card {
+    background-color: rgb(36, 36, 36);
+  }
+  .prev, .next, .tags li {
+    color: rgb(214, 214, 214);
   }
 }
