@@ -29,6 +29,14 @@ const Main = () => {
                         flag = 1;
                     };
                 })
+
+                if(search.toLowerCase().includes(post.title.toLowerCase())){
+                    flag = 1;
+                }
+                if(post.title.toLowerCase().includes(search.toLowerCase())){
+                    flag = 1;
+                }
+
                 if(flag === 1){
                     return true;
                 }

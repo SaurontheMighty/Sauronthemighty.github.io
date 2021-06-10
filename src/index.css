@@ -226,6 +226,7 @@ main {
   padding-bottom: 5px;
   border-radius: 20px;
   margin-right: 5px;
+  margin-bottom: 3px;
   border: 1px solid #f1f1f1;
   color: #818181;
 }
@@ -343,8 +344,12 @@ footer {
       "main main main main"
       "aside aside aside aside";
   }
-  .about-card, .aside {
+  .about-card, .aside, .main-card {
+    margin-left: 10px;
     margin-right: 10px;
+  }
+  .main-card {
+    margin-bottom: 0px;
   }
   footer {
       margin-top: 10px;
@@ -358,8 +363,11 @@ footer {
       "main main main main"
       "aside aside aside aside";
   }
-  .about-card, .aside {
+  .about-card, .aside, .main-card {
     margin-right: 10px;
+  }
+  .main-card {
+    margin-bottom: 0px;
   }
   .overflow {
       width: 0%;
