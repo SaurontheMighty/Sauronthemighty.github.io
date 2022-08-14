@@ -1,10 +1,102 @@
 module.exports = [
     {
+        "title": "Not Evil Sudoku",
+        "uid": "notevil",
+        "thumbnail": 'images/notevil.png',
+        "body1": "Designed, developed a clean, minimalistic Sudoku app that has gained over 10,000+ installs in just 4 months. Features include progress charts, daily sudoku reminders, games at various difficulty levels and real-time checking. Generated hundreds of unique sudoku puzzles in seconds by writing a sudoku generator that used backtracking.",
+        "description": 'A clean minimalistic sudoku app with over 11,000 users',
+        "body2": "Developed a custom analytics solution using Node.js, Express which the app communicated with to track usage of various features of the app, identify trends and prioritize future development. Backend was deployed to Amazon Web Services' EC2 server using Elastic Beanstalk and used DynamoDB for storage. Used ACM for provisioning a HTTPS certificate and Route 53 for DNS management.",
+        "slideshow": [
+            {
+                image: "notsudoku.png",
+                caption: "Main Screen",
+                key: 1
+            },
+            {
+                image: "notdark.png",
+                caption: "Dark Mode",
+                key: 2
+            },
+            {
+                image: "notcharts.png",
+                caption: "Charts",
+                key: 3
+            },
+            {
+                image: "notsettings.png",
+                caption: "Settings",
+                key: 4
+            },
+            {
+                image: "nothelp.png",
+                caption: "Auto-validate",
+                key: 5
+            }
+        ],
+        "author": "Ashish Selvaraj",
+        "links": ["http://apple.co/3vyesUR"],
+        "tags": ["App", 'Swift', "SwiftUI", 'AWS', 'EC2', 'DynamoDB'],
+        "id": 10
+    },
+    {
+        "title": "E-commerce website",
+        "uid": "ecomm",
+        "thumbnail": 'images/ecom1.png',
+        "body1": "This is a full stack e-commerce website with a Python Flask backend and a React frontend. I've been meaning to try out Flask and the Stripe API so I thought this would be a good project to use both of those technologies. The backend has two main routes /api/payment and /api/products. The payment route uses Stripe to create a client secret and the product route exposes a way to get the list of products and add products.",
+        "description": 'Browse products, add them to your cart and checkout',
+        "body2": "I really liked how simple and straight forward Flask is, it made it really simple to work with a SQLite database and handle routes. The Stripe API is also great, and it's mindblowing to see how easy it is to handle payments with it. I might still prefer Node for bigger projects because writing both the frontend and backend with the same language is a lot simpler.",
+        "slideshow": [
+            {
+                image: "ecom1.png",
+                caption: "Main Page",
+                key: 1
+            },
+            {
+                image: "ecom2.png",
+                caption: "Checkout Page",
+                key: 2
+            }
+        ],
+        "author": "Ashish Selvaraj",
+        "links": [],
+        "tags": ["Website", "Flask", 'Python', 'React', 'JSX', 'JavaScript', 'HTML', 'CSS', 'SQL'],
+        "id": 11
+    },
+    {
+        "title": "Full Stack Blogging Website",
+        "uid": "hooloovoo",
+        "thumbnail": 'images/hooloovoo.png',
+        "body1": "Building a full stack application where I built everything from the frontend to the API to the database has always been something that I found really exciting. This project was built with React as the frontend, Node and Express in the Backend and with MongoDB as the database. The backend exposes a Blogging API with the ability to get, edit and create blogs. The frontend then calls this API and populates the UI for the user.",
+        "description": 'A responsive full stack blogging application built with the MERN stack.',
+        "body2": "Designing my own API was a really interesting experience and something I really enjoyed. Designing sytems as a whole is an amazing experience where you have to consider scalability, cost and user experience. I designed the API so that I would need to make as few API calls as possible. The website usually remembers context and avoids fetching data twice. For example, if you click on a blog on the home page, it will send data about the blog to the blog details page so it doesn't need to call the API again. But of course if you go straight to the details page of a blog from an external source it does need to fetch from the API. \n\nBackend: \n I chose Node for one main reason: I wanted to be able to build the frontend and backend with the same language. Since this is a solo project it just makes everything easier and faster because I don't need to switch between languages. I then used Express as the framework for Node because it simplified the experience of building a Node backend and made it much more elegant. I used several packages: Mongoose, Nodemon, Morgan, dotenv, CORS. This was built to be production ready and dotenv is really great because it lets the developer hide their secrets. For me, I used it to hide the Mongo DB URI since I was using MongoDB Atlas which is a cloud based NoSQL database. Morgan and Nodemon were used to make development faster and I highly recommend them. \n\n Frontend: \n The frontend was built with React and I've grown to really enjoy building React websites. The benefits of building Single Page Applications (SPAs) are hard to down play. It allowed me to reuse components which in turn reduced development time. And, JSX meant that there was hardly any repetition in the code.",
+        "slideshow": [
+            {
+                image: "hooloovoo.png",
+                caption: "Main Page",
+                key: 1
+            },
+            {
+                image: "editblog.png",
+                caption: "Edit Page",
+                key: 2
+            },
+            {
+                image: "blogdetails.png",
+                caption: "Details Page",
+                key: 3
+            }
+        ],
+        "author": "Ashish Selvaraj",
+        "links": [],
+        "tags": ["Website", "Node.js", 'React', 'MongoDB', 'Express', 'JSX', 'JavaScript', 'HTML', 'CSS'],
+        "id": 9
+    },
+    {
         "title": "Introspekt",
         "uid": "introspekt",
         "thumbnail": 'images/ipagex.png',
         "body1": "Introspekt is a cross-platform (iOS & Android) journaling app. Introspekt takes a graphical and data-oriented approach to journaling and lets you track your happiness and general satisfaction with life over time. You can give each day a score from 1 to 1000 and write a short description about it, as well as what you feel looking back on how you spent it. It also has a goal/habit tracking option where you can set how frequently you perform the task and assigns a streak based on how many days you’ve been able to keep it up. It is currently available on the PlayStore and may launch on the App Store based on how much free time I get.",
-        "description": 'A cross-platform Journaling App',
+        "description": 'A cross-platform Journaling App published to the Google Play Store.',
         "body2": "Introspekt’s front-end and UI is built with Flutter, Google’s cross-platform framework and written in Dart. The back-end is a No-SQL database in FireStore. Google’s fuchsia OS is starting to make an appearance in products so I believe there’s a future for Flutter yet. Since this was my first app, most of the logic and computation happens in the front-end on-device.\n\n    The backend comes into play as part of an optional sync-across-devices feature which allows the user to sync their data and journal entries across all of their devices. This was easily the most interesting part of the app. I was paranoid about security so despite the HTTPS connection between the device and Firestore, I also implemented symmetric AES (Advanced Encryption Standard) encryption on-device. This meant that the data was encrypted with AES on-device and only then sent to the cloud. When the second device retrieved it from the cloud this information was decrypted. This also meant that I couldn’t read any of the data which was a comfort because I didn’t want to breach anyone’s privacy. Another interesting feature I implemented was a ‘Delete Account’ feature. This may seem trivial and you may think that all it would take was deleting the user from Firebase Auth and Firestore but it proved tricky because the process occasionally failed midway. This was dangerous because if you just retried it, it would fail because part of the account would have been deleted so it wouldn't be able to find the account. So I wrote some code to store where it failed so instead of displaying an annoying ‘Something went wrong’ or ‘Try Again Later’ message, I could atleast tell them what percentage of the process had been completed and start from there next time. \n\n Overall, it was the most interesting project I’ve worked on to-date and it really broadened my horizons with respect to apps, encryption and building a production worthy application.",
         "slideshow": [
             {
@@ -82,9 +174,15 @@ module.exports = [
         "uid": "this",
         "thumbnail": 'images/newdesign.png',
         "description": "The website you're looking at right now.",
-        "body1": "This website is a place where I can showcase the things I build and talk about the things I am passionate about. I initially built this with plain HTML, CSS, JavaScript because I liked the simplicity and enjoyed seeing how fast the website loaded. However, recently I rewrote the JavaScript to use React, and it’s probably one of the best decisions I’ve made. It allows me to just add posts as a JSON object and write the JSX syntax for a single post. React can then generate the rest on the fly with the power of JavaScript. ",
+        "body1": "This website is a place where I can showcase the things I build and talk about the things I am passionate about. I initially built this with plain HTML, CSS, JavaScript because I liked the simplicity and enjoyed seeing how fast the website loaded. However, I recently rewrote it with React, and it’s probably one of the best decisions I’ve made. It allows me to just add posts as a JSON object and write the JSX syntax for a single post. React can then generate the rest on the fly with the power of JavaScript. ",
         "body2": "This is also amazing because in the future it’ll be really simple to set up a REST API and use fetch to get posts from an external database. It’s also a really clean solution and I can avoid ridiculous amounts of DOM manipulation.\n\nReact Implementation: I set up a Post component and each post is generated as one of those, I then used the useState hook to show/hide posts as needed and also implemented the image carousel with useState. \nCSS: I was initially using Flexbox but I learned how to use CSS Grid and it made things really really simple. The way grid template areas let me layout designs is simply ✨ magical ✨. \n\nRewriting all the DOM manipulation seemed like it would be a drag but I actually really enjoyed playing with React. Would recommend React 10/10! ",
-        "slideshow": null,
+        "slideshow": [
+            {
+                image: "websitestats.png",
+                caption: "Lighthouse Stats for AshishSelvaraj.com",
+                key: 1
+            }
+        ],
         "author": "Ashish Selvaraj",
         "links": null,
         "tags": ['Website', 'React', 'JavaScript', 'HTML', 'CSS'],

@@ -1,20 +1,34 @@
 /* Body is Grid */
-body {
+html, body {
   margin: 0;
+  height: 150%;
+  width: 100%;
   text-align: center;
-  background: #fbfcfd;
+  background: rgb(253,144,153);
+  background: linear-gradient(180deg, rgba(253,144,153,1) 0%, rgba(252,177,124,1) 50%, rgba(252,177,124,1) 100%);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Header Styles */
 header {
-  padding: 15px;
-  font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, 'Open Sans', 'Helvetica Neue', sans-serif;
-  border-bottom: 1px solid #e2e0e0;
-  background: #ffff;
+  color: white;
+  text-align: center;
+  background-color: rgb(255, 224, 85, 0);
+  /* background: linear-gradient(90deg, rgba(252,177,124,1), rgba(253,144,153,1)); */
+  /* rgba(253,144,153,1) background: linear-gradient(180deg, rgba(253,144,153,1) 0%, rgba(252,177,124,1) 100%); */
+}
+
+h1 {
+  margin: 10px;
 }
 
 /* Main Grid */
 main {
+  position: relative;
   margin-top: 10px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -28,16 +42,19 @@ main {
 
 /* Grid Details */
 .about-card {
+  opacity: 0.8;
   margin-left: 10px;
   grid-area: about;
 }
 
 .aside {
+  opacity: 0.8;
   margin-left: 10px;
   grid-area: aside;
 }
 
 .main-card {
+  background-color: rgb(255, 255, 255, 0.7);
   margin-right: 10px;
   grid-area: main;
 }
@@ -50,7 +67,7 @@ main {
   height: min-content;
   border-radius: 15px;
   border: 1px solid #ececec;
-  background: #ffff;
+  /* background: #ffff; */
   font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -77,7 +94,7 @@ main {
 }
 
 .search-tags{
-  margin-top: 10px;
+  margin: 20px 5px 0px 5px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 0px;
@@ -85,6 +102,8 @@ main {
   font-size: smaller;
   border-top: 1px solid #f1f1f1;
   border-bottom: 1px solid #f1f1f1;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255, 0.8);
 }
 
 .search-tags li{
@@ -150,7 +169,7 @@ main {
   border-radius: 8px;
   padding: 10px;
   border: 1px solid #ececec;
-  background: #ffff;
+  /* background: #ffff; */
   margin-bottom: 10px;
 }
 
@@ -164,7 +183,7 @@ main {
   width: 93%;
   border-radius: 50px;
   color: #000000;
-  background: #f6f7f8;
+  /* background: #f6f7f8; */
 }
 
 .search-button{
@@ -175,6 +194,7 @@ main {
 }
 
 .section-header{
+  background-color: rgb(255, 255, 255, 0.5);
   font-size: 20px;
   text-align: center;
 }
@@ -184,6 +204,8 @@ main {
   margin: 5px;
   padding: 10px;
   border-radius: 10px;
+  opacity: 0.9;
+  background-color: white;
   border: 1px solid #f1f1f1;
 }
 
@@ -329,12 +351,13 @@ article{
 
 /* Footer */
 footer {
-  border-top: 1px solid #e2e0e0;
-  word-spacing: 2px;
+  position: fixed;
+  color: white;
   text-align: center;
-  font-family: BlinkMacSystemFont, Arial, Helvetica, sans-serif;
-  background: #ffff;
-  padding-bottom: 10px;
+  top: 100%;
+  width: 100%;
+  z-index: 0;
+  background-color: rgb(253, 144, 153, 0.8);
 }
 
 @media screen and (max-width: 760px) and (min-width: 412px){
@@ -345,11 +368,28 @@ footer {
       "aside aside aside aside";
   }
   .about-card, .aside, .main-card {
+    opacity: 0.88;
     margin-left: 10px;
     margin-right: 10px;
   }
+  .info {
+    width: 85%;
+  }
+  .overflow {
+    overflow: scroll;
+  }
+  .gutter {
+    border-radius: 0px 5px 0px 5px;
+    margin-left: 0px;
+    justify-content: center;
+    top: 88%;
+  }
   .main-card {
+    margin-top: 10px;
     margin-bottom: 0px;
+  }
+  .aside {
+    margin-bottom: 20px;
   }
   footer {
       margin-top: 10px;
@@ -366,19 +406,26 @@ footer {
   .about-card, .aside, .main-card {
     margin-right: 10px;
   }
+  .aside {
+    margin-bottom: 10px;
+  }
+  .info {
+    display: none;
+  }
   .main-card {
+    margin-left: 10px;
     margin-bottom: 0px;
   }
   .overflow {
-      width: 0%;
+    width: 0%;
   }
   footer {
-      margin-top: 10px;
+      margin: 10px 0px 10px 0px;
   }
 }
 
 /* Dark Theme */
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   body {
     background-color: rgb(26, 26, 26);
   }
@@ -394,4 +441,126 @@ footer {
   .prev, .next, .tags li {
     color: rgb(214, 214, 214);
   }
+} */
+
+/* Game of Life CSS */
+.container {
+  position: relative;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.box {
+  border: 1px solid rgb(256, 256, 256, 0.2);
+  width: 10px;
+  height: 10px;
+  font-size: 0;
+}
+
+.life {
+  background-color: white;
+  border: 1px solid white;
+}
+
+.info {
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 50px;
+  height: 40px;
+  width: 150px;
+  background-color: rgb(256, 256, 256, 0.96);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 8.5px 0px 0px;
+}
+
+.infos {
+  cursor: pointer;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 50px;
+  height: 40px;
+  width: 50px;
+  background-color: rgb(256, 256, 256, 0.96);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.infosTitle {
+  font-size: large;
+  color:rgb(107, 51, 11);
+}
+
+.infoTitle {
+  /* margin-top: 0px; */
+  font-style: italic;
+  color:rgb(107, 51, 11);
+}
+
+.infoBody {
+  /* margin-top: 2px; */
+  color: black;
+  font-size: smaller;
+  white-space: pre-line;
+}
+
+.expanded {
+  margin-bottom: 0px;
+}
+
+.smaller {
+  color: #913609;
+  font-size: smaller;
+}
+
+.sticky {
+  /* position: absolute;
+  height: 100%;
+  top: 91%;
+  border: 1px solid black; */
+}
+
+/* CSS For Info Box */
+.gutter {
+  border-radius: 0px 30px 30px 0px;
+  padding: 5px;
+  height: 50px;
+  top: 5px;
+  background-color: rgba(253,144,153,1);
+  position: fixed;
+  top: 90%;
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.expand {
+  border-radius: 15px 15px 0px 0px;
+  height: 300px;
+  width: 200px;
+  transform: translateY(-80%);
+  transition: width 0.25s, height 0.5s;
+}
+
+.collapse {
+  border-radius: 50px;
+  height: 40px;
+  width: 150px;
+  transform: translateY(-2%);
+  transition: border-radius 0.25s, width 0.25s, height 0.25s, transform 1.25s;
 }

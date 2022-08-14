@@ -72,7 +72,7 @@ const Main = () => {
                     className="search-card"
                     value={search}
                     onChange = {(e) => setSearch(e.target.value)}></input><button
-                    aria-label="Search all the Posts on the Page" type="submit" className="search-button" id="search-button">&#128269;</button>
+                    aria-label="Search all the Posts on the Page" type="button" className="search-button" id="search-button">&#128269;</button>
                 </form>
             </section>
             <section className="search-tags">
@@ -101,6 +101,7 @@ const Main = () => {
                 setBack(false);
                 setPosts(reset);
                 setSearch("");
+                setNoPost(false);
                 }}>Back</button>}
         </section>
     );

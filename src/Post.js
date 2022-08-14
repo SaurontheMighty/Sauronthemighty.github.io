@@ -1,9 +1,11 @@
 import { useState } from "react";
-import { useMediaQuery } from 'react-responsive';
+import useWindowDimensions from './functions.js'
 
 const Post = ({post, setSearch}) => {
 
-    const isMobile = useMediaQuery({ query: `(max-width: 760px)` });
+    let {width, height} = useWindowDimensions();
+    const isMobile = width < 760;
+    const isTiny = width < 350;
     const [current, setCurrent] = useState(1);
     const [show, setShow] = useState(false);
 
@@ -23,19 +25,21 @@ const Post = ({post, setSearch}) => {
                     {!show && <p className="readmore" id={post.uid+"readmore"} onClick={() => setShow(true)}>Read</p>}
                 </article>
                 <section>
-                    <p><img src={image} className="postpicapp" alt="Post Thumbnail" /></p>
+                    <p><img src={image} className="postpicapp overflow" alt="Post Thumbnail" /></p>
                 </section>
             </section>
             {show && <article id={post.uid}>
                 {post.body1 && <p className="more">{post.body1}</p>}
                 {post.slideshow && <div className="slideshow-container">
                         {(post.slideshow).map((image) => (
-                            <div key={image.key} className={image.key == current? "":"hidden"}>
+                            <div key={image.key} className={image.key == current? "":"hidden"} >
                                 <p>{image.caption}</p>
                                 <div style={{
                                     textAlign: 'center'
                                     }}>
-                                    <img src={"images/"+image.image} className="slide-img" style={{width: '30%'}} alt={image.caption} />
+                                    <img src={"images/"+image.image} className="slide-img" style={{
+                                    height: `${0.5*height}px`
+                                }} alt={image.caption} />
                                 </div>
                                 <br />
                             </div>
@@ -57,7 +61,7 @@ const Post = ({post, setSearch}) => {
                         }}>&#10095;</a>
                         <section style={{textAlign:"center"}}>
                             {(post.slideshow).map((image) => (
-                                <span className={image.key == current ? "dot active-dot" : "dot"}></span>
+                                <span className={image.key == current ? "dot active-dot" : "dot"} onClick = {() => {setCurrent(image.key);}}></span>
                             ))}
                         </section>
                     </div>

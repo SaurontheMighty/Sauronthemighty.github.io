@@ -21,9 +21,3 @@ Projects I've written about:
 - UIKit iOS App
 - Inventory Management System
 - Bobrun
-
-I built a landing page for a new project: [introspekt.app](https://www.introspekt.app/)
-
-I'm designing and building a fully native journaling app called Introspekt. It'll be very different from the app by the same name I created in 2020.
-
-This time it'll be built with SwiftUI and I'll do lots of product research and design.
