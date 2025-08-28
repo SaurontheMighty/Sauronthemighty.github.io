@@ -108,6 +108,7 @@ function App() {
             </div>
           </section>
         </section>
+        <div class="paperOverlay"></div>
       </main>
     </div>
   );
