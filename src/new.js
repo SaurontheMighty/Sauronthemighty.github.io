@@ -7,7 +7,7 @@ function Simple() {
             <div className="main-text">
                 <p>I enjoy building software. Built my first website back in 2014 after discovering HTML and have been hooked ever since. My creations over the years (in chronological order):</p>
                 <ul>
-                    <li>👾 2D rpg called Bobrun (where a character named Bob explores a world and runs from monsters...who could've guessed)</li>
+                    <li>👾 2D adventure pixel art game called Bobrun</li>
                     <li>🕒 Productivity extension that let you set how long you'd spend on a website and then flipped the page to hold you to it</li>   
                     <li>📕 Journaling app where users scored their days from 1-1,000 and could write about their day (Intropsekt)</li>
                     <li>🔢 Minimalist sudoku app that somehow crossed 150,000 installs (<a href="https://notevil.io">Not Evil Sudoku</a>)</li>

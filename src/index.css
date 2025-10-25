@@ -1,11 +1,11 @@
 h1 {
-  font-family: 'SF Mono', 'Monaco', 'Menlo', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 400;
 }
 
 body {
   padding: 5%;
-  font-family: 'SF Mono', 'Monaco', 'Menlo', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 p {
@@ -23,7 +23,7 @@ li {
 }
 
 .main-text {
-  font-family: 'SF Mono', 'Monaco', 'Menlo', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .video-player {
