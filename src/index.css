@@ -1,29 +1,32 @@
 h1 {
-  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 400;
 }
 
 body {
   padding: 5%;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Palatino, "Georgia", serif;
 }
 
 p {
   margin-top: 27px;
 }
 
+.main-text b + p {
+  margin-top: 0;
+}
+
 ul {
-  list-style: none;
-  padding-left: 0;
+  /* list-style: none; */
+  /* padding-left: 0; */
 }
 
 li {
   margin-bottom: 15px;
-  padding-left: 2em;
+  /* padding-left: 2em; */
 }
 
 .main-text {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 1.55;
 }
 
 .video-player {
