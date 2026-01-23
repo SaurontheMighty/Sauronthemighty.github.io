@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function Simple() {
     return (
         <body>
@@ -6,6 +8,7 @@ function Simple() {
                 <h1>Ashish Selvaraj</h1>
             </div>
             <div className="main-text">
+                <p className="nav-links"><Link to="/writing">Writing</Link></p>
                 <p>I enjoy building software. Built my first website back in 2014 after discovering HTML and have been hooked ever since. To me the beauty of software is its meritocracy, a single person with a laptop can challenge software giants and win. My past projects have been mostly for myself and my friends, including a 2D adventure RPG, a productivity extension that messed with your tabs if you spent too long on them, a journaling app and Not Evil Sudoku.</p>
                 <p>Here's a promo video I made for Not Evil Sudoku back in 2022 that I'm vaguely proud of:</p>
                 <video controls className="video-player">
