@@ -1,12 +1,12 @@
 /* Paper-like warm aesthetic */
 html {
-  background-color: #f8f5f0;
+  background-color: #f9f3ea;
 }
 
 body {
   padding: 5%;
   font-family: Palatino, Georgia, serif;
-  background-color: #f8f5f0;
+  background-color: #f9f3ea;
   color: #3d3632;
   line-height: 1.7;
 }
@@ -111,6 +111,64 @@ li {
   color: #8b8178;
   margin-left: 12px;
   font-size: 0.9em;
+}
+
+.post-date-inline {
+  color: #8b8178;
+  font-size: 0.9em;
+  margin-right: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Projects list */
+.project-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.project-list li {
+  margin-bottom: 12px;
+}
+
+.project-year {
+  color: #8b8178;
+  font-size: 0.9em;
+  margin-right: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+.status-live,
+.status-archived {
+  margin-right: 10px;
+  font-size: 0.6em;
+  vertical-align: middle;
+  cursor: help;
+  position: relative;
+}
+
+.status-live {
+  color: #5a9a5a;
+}
+
+.status-archived {
+  color: #b0a89e;
+}
+
+.status-live:hover::after,
+.status-archived:hover::after {
+  content: attr(title);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 100%;
+  margin-bottom: 4px;
+  background: #3d3632;
+  color: #f9f3ea;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  white-space: nowrap;
 }
 
 .post-nav {
