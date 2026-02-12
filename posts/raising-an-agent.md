@@ -31,7 +31,7 @@ Plus, when I read the resulting system prompt I felt quite bad. It sounds silly 
 So I decided to scrap it and write a mini-essay telling the agent who it is, why it exists, what its goals are and what its voice is. This approach solved entire classes of issues at once. The agent was instantly more helpful, more capable and all around more fun to text.
 
 ### Agent Empowerment
-The original vision of the project was that the agent you text is not the agent that actually goes and makes changes to your code. The agent you talk to is more like a concierge or dispatcher that figures out the repository you're trying to make a change in and then dispatches a coding agent to actually go and make the change. I felt that this was the right approach for the sake of context management but also because I wanted to be able to have multiple sessions at once and this seemed like the right way to go about it.
+The original vision of the project was that the agent you text is not the agent that actually goes and makes changes to your code. The agent you talk to is more like a concierge or dispatcher that figures out the repository you're trying to make a change in and then dispatches a coding agent to actually go and make the change. I felt that this was the right approach for the sake of context management but also because I wanted to be able to have multiple sessions at once.
 
 A hand written system prompt seemed to solve most of the issues around tone and picking the right actions but it still had some issues around hallucination. The agent would say things like "the task is running" when it wasn't. But what I found was that for every hallucination there was a tool I could provide that just completely solved it. For example in this case giving it the ability to check up on the status of the coding agent meant that it never hallucinated the status of the task again. It seems so obvious but just asking `what tool could I give the agent` in response to every hallucination felt like a breakthrough.
 
@@ -40,5 +40,5 @@ Turns out that if the agent knows what it's supposed to do and has the tools to 
 ### Agent Parenting Conclusions
 My learnings from this fun experiment seem to be that agents are a lot like people. Give them the information they require, the tools to succeed and that's just what they'll do.
 
-As we shift from coding to prompting, the paradigm for coding seems to be shifting from a workstation to wherever you may be, whenever you may have time. A lot of people I talked to were quite interested in 'an engineer you can iMessage' and so we're planning on rolling it out to a few people a day to try. If you're interested you can sign up at [kotyo.ai](https://kotyo.ai).
+As we shift from coding to prompting, the paradigm for coding seems to be shifting from a workstation to wherever you may be, whenever you may have time. A lot of people I talked to were quite interested in 'an engineer you can iMessage' so we're planning on rolling it out to a few people a day to try. If you're interested you can sign up at [kotyo.ai](https://kotyo.ai).
 
