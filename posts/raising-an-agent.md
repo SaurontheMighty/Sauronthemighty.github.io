@@ -35,9 +35,10 @@ The original vision of the project was that the agent you text is not the agent 
 
 A hand written system prompt seemed to solve most of the issues around tone and picking the right actions but it still had some issues around hallucination. The agent would say things like "the task is running" when it wasn't. But what I found was that for every hallucination there was a tool I could provide that just completely solved it. For example in this case giving it the ability to check up on the status of the coding agent meant that it never hallucinated the status of the task again. It seems so obvious but just asking `what tool could I give the agent` in response to every hallucination felt like a breakthrough.
 
-Turns out that if the agent knows what it's supposed to do and actually has the tools to do it, it performs shockingly well. 
+Turns out that if the agent knows what it's supposed to do and has the tools to actually do it, it performs shockingly well. 
 
 ### Agent Parenting Conclusions
-My learnings from this fun experiment seem to be that agents are a lot like people. Give them the information they require and the tools to succeed, that's just what they'll do.
+My learnings from this fun experiment seem to be that agents are a lot like people. Give them the information they require, the tools to succeed and that's just what they'll do.
 
-As we shift from coding to prompting, the paradigm for coding seems to be shifting from a workstation to wherever you may be, whenever you may have time. A lot of people we talked to were quite interested in the agent and we're rolling it out to a few people a day. If you're interested you can sign up at [kotyo.ai](https://kotyo.ai)
+As we shift from coding to prompting, the paradigm for coding seems to be shifting from a workstation to wherever you may be, whenever you may have time. A lot of people I talked to were quite interested in 'an engineer you can iMessage' and so we're planning on rolling it out to a few people a day to try. If you're interested you can sign up at [kotyo.ai](https://kotyo.ai).
+
