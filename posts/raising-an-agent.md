@@ -37,7 +37,7 @@ A hand written system prompt seemed to solve most of the issues around tone and 
 
 Turns out that if the agent knows what it's supposed to do and has the tools to actually do it, it performs shockingly well. 
 
-### Agent Parenting Conclusions
+### Conclusions
 My learnings from this fun experiment seem to be that agents are a lot like people. Give them the information they require, the tools to succeed and that's just what they'll do.
 
 We're witnessing a paradigm shift from coding to prompting and from workstations to wherever you may be, whenever you may have time. A lot of people I talked to were interested in 'an engineer you can iMessage' so we're planning on rolling it out to a few people to try. We haven't monetized it yet so if nothing else you get free Codex. If you're interested you can sign up at [kotyo.ai](https://kotyo.ai).
