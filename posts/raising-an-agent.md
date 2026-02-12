@@ -1,15 +1,15 @@
 ## Raising an Agent
 Writing my own AI agent brought to mind a lot of symmetries with parenting. Given that I have no children and ~one month of AI experience, I figured that I was just about qualified enough to write an article about it on the internet.
 
-Parenting is quite fascinating and having grown up all over the place, I've been able to observe many different forms of parenting. In India, scolding is big. Make a mistake? You're told very clearly that you're action was bad and you shouldn't do it. However, in North America, there is another form of parenting I have observed alongside scolding. It involves treating your kid like an adult. This usually involves pointing out the consequences of their actions so that they themselves can conclude that the action is an undesirable one. While kids of both cultures seem to generally turn out okay, from my limited experience volunteering it did seem like kids responded a lot faster to the second approach. 
+Parenting is quite fascinating and having grown up all over the place, I've been able to observe many different forms of parenting. In India, scolding is big. Make a mistake? You're told very clearly that you're action was bad and you shouldn't do it. However, in North America, there is another form of parenting I have observed alongside scolding. It involves treating your kid like an adult. This usually involves pointing out the consequences of their actions so that they themselves can conclude that the action is an undesirable one. While kids of both cultures seem to generally turn out okay, from my limited experience volunteering it did seem like kids responded better to the second approach. 
 
 ### What's an Agent
-Everyone is talking about AI agents but it was only last week, after I built one, that I learnt that agents are just loops. Every iteration, a call is made to an LLM and the LLM's response is added to a log that is passed in as input for the next iteration. And if you give the LLM the ability to use tools as part of its responses you really start to feel the power.
+Everyone is talking about AI agents but it was only last week, after I built one, that I learnt that agents are just loops. Every iteration, a call is made to an LLM and the LLM's response is added to a log that is passed in as input for the next iteration. And if you give the LLM the ability to use tools as part of its responses you really start to feel the power. If you thought that adding AI agents to your software product would be the wedge that saves you, I fear you will be disbursed of that notion fairly quickly. Agents can be quirky to get right but unfortunately like much of software has proven to be, they are trivial to build.
 
 ![Always has been](/alwayshasbeen.png)
 
 ### iMessage Engineer
-I wanted to build an agent that I could talk to over iMessage with the goal that perhaps this agent could write code and do some work for me while I'm on the go. Think OpenClaw but less access to a whole OS and more engineering focused. I wrote a prompt, gave it access to some tools and let it go wild. Unfortunately the results were far from spectacular. But then I thought, why not just give claude access to the agent as a cli, allow it to run the cli, trace the logs and then improve the agent? This seemed rather magical, using AI to build AI. This is the future we've been promised after all. 
+I wanted to build an agent that I could talk to over iMessage with the goal that perhaps this agent could write code and do some work for me while I'm on the go. Think OpenClaw but less access to a whole OS and more engineering focused. I wrote a prompt, gave it access to some tools and let it go wild. Unfortunately the results were far from spectacular. But then I thought, why not just give Claude access to the agent as a cli, tell it to run the agent, trace the logs and then improve the agent? This seemed rather magical, using AI to build AI. This is the future we've been promised after all. 
 
 > "Because AI is now writing much of the code at Anthropic, it is already substantially accelerating the rate of our progress in building the next generation of AI systems. This feedback loop is gathering steam month by month, and may be only 1–2 years away from a point where the current generation of AI autonomously builds the next." — Dario Amodei in [The Adolescence of Technology](https://darioamodei.com/essay/the-adolescence-of-technology)
 
@@ -24,7 +24,7 @@ When the agent did something distinctly undesirable like commit to the main bran
 
 If I interjected with a complaint like "the agent is sending paragraphs, this is texting, it should respond in short sentences.", Claude would append the system prompt with a command prefaced with `IMPORTANT`. For example `IMPORTANT: This is texting, reply with 1-2 sentences not paragraphs`. 
 
-The result of a couple runs of letting an agent tune an agent was a very shouty system prompt that didn't seem much better than the one I started with. It's kind of like whack-a-mole, if you specifically ban the agent from doing a specific action, it probably won't repeat the action but it doesn't stop similar actions of the same class from taking place.
+The result of a couple runs of letting an agent tune an agent was a very shouty system prompt riddled with `IMPORTANT` tags that didn't seem to perform much better than the one I started with. It's kind of like whack-a-mole, if you specifically ban the agent from doing a specific action, it probably won't repeat the action but it doesn't stop similar actions of the same class from taking place.
 
 Plus, when I read the resulting system prompt I felt quite bad. It sounds silly to imagine yourself as an agent, but even so, if I were an agent, I would not want to read a prompt like that. Very little on what to do, very much on what not to do.
 
@@ -40,6 +40,4 @@ Turns out that if the agent knows what it's supposed to do and actually has the 
 ### Agent Parenting Conclusions
 My learnings from this fun experiment seem to be that agents are a lot like people. Give them the information they require and the tools to succeed, that's just what they'll do.
 
-
-
-
+As we shift from coding to prompting, the paradigm for coding seems to be shifting from a workstation to wherever you may be, whenever you may have time. A lot of people we talked to were quite interested in the agent and we're rolling it out to a few people a day. If you're interested you can sign up at [kotyo.ai](https://kotyo.ai)
