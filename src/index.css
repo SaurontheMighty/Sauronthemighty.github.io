@@ -6,6 +6,7 @@ html {
 body {
   padding: 5%;
   font-family: Palatino, Georgia, serif;
+  font-size: 17px;
   background-color: #f9f3ea;
   color: #3d3632;
   line-height: 1.7;
@@ -39,8 +40,9 @@ a:hover {
   text-decoration-color: #8b7355;
 }
 
-.main-text b + p {
-  margin-top: 0;
+.main-text b + p,
+.main-text b + ul {
+  margin-top: 6px;
 }
 
 ul {
@@ -63,12 +65,11 @@ li {
 
 @media (min-width: 768px) {
   body {
-    width: 760px;
+    max-width: 70%;
     margin: 0 auto;
   }
 }
 
-/* Navigation and links */
 .title a {
   color: inherit;
   text-decoration: none;
@@ -202,6 +203,23 @@ li {
   background: #edeae4;
   padding: 2px 6px;
   border-radius: 3px;
+}
+
+.post-content img {
+  max-width: 400px;
+  width: 100%;
+}
+
+.post-content img[src="/nes-metrics.png"],
+.post-content img[src="/sf.jpeg"] {
+  max-width: 100%;
+}
+
+.post-sig {
+  margin-top: 32px;
+  color: #6b6158;
+  font-style: italic;
+  text-align: right;
 }
 
 .post-content blockquote {
