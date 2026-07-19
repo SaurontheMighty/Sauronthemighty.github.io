@@ -11,7 +11,7 @@ It was also beginner energy when I released a sudoku app for iOS despite a) not 
 
 ![Always has been](/nes-metrics.png)
 
-Screenshot from [SideKit](appsidekit.com).
+Screenshot from [SideKit](https://appsidekit.com).
 
 Beginner energy’s fundamental beauty lies in ignorance, the ignorance of all the challenges that hinder more experienced people from trying things. If I had been an expert on sudoku, I would not have attempted to make a sudoku app. Just the thought of how I would build a hint system, how I’d have to make sure the puzzles had diverse solving strategies and so on would have held me back. In a more impressive example, in 1976, Marjorie Rice, a homemaker with only a high school education found new shapes of pentagons that could tile a plane, a problem mathematicians thought was complete. Sometimes, beginners achieve things that shouldn’t be possible simply because they lack the knowledge that it isn’t possible.
 
